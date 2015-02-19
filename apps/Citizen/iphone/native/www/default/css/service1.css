@@ -1,0 +1,97 @@
+
+/* Stylesheet content from css/service1.css in folder common */
+.navbar{
+    background: #e84343;
+}
+
+.sidebar-left, .sidebar-right{
+    background: #e84343;
+}
+
+.sidebar-right a.list-group-item{
+    color:#000;
+}
+.view-wrapper{
+    background:#fff;
+    min-height: -webkit-calc(100%);
+    min-height: -moz-calc(100%);
+    min-height: calc(100%);
+}
+
+.section-header{
+    height: 65px;
+    line-height: 65px;
+    text-align: left;
+    font-size: 18px;
+    color: #999999;
+    padding-left: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.s-dropdown{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    min-height: 50px;
+}
+
+.s-dropdown .text{
+    font-size: 1.5em;
+}
+
+.s-dropdown .icon{
+    float: right;
+}
+.s-line{
+    border-top: solid 1px #000;
+}
+
+.s-img{
+    padding:20px;
+    text-align: center;
+    position: relative;
+}
+.s-img .s-round{
+    width:80%;
+    border-radius: 49.999%;
+}
+
+.s-img .s-camera{
+    position: absolute;
+    left: 45%;
+    bottom: 18%;
+    width: 10%;
+}
+
+.s-descrption{
+    padding:10px;
+    font-size: 1.2em;
+}
+
+.s-map{
+    position: relative;
+}
+.s-map img{
+    width: 100%;
+}
+
+ .btn-current{
+    background: #7ab76e;
+     border-color: #7ab76e;
+     border-radius: 0;
+     color: #fff;
+     position: absolute;
+     bottom: 10px;
+     right: 10px;
+}
+
+.s-submit{
+    padding: 20px;
+}
+
+.s-submit .btn-submit{
+    background: #ff8f71;
+    color: #fff;
+    border-color:#ff8f71 ;
+}

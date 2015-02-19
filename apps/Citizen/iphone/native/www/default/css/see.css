@@ -1,0 +1,207 @@
+
+/* Stylesheet content from css/see.css in folder common */
+/* Stylesheet content from css/see.css in folder common */
+
+
+.view-wrapper{
+	margin-top:65px;
+	background:#fff;
+}
+
+.navbar{
+	background: #0f85b6;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #0f85b6;
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}
+
+.searchbox {
+	border: 0;
+	text-align: center;
+	height: 89px;
+	font-weight: 700;
+	font-size: 15px;
+    font-family:Helvetica;
+}
+
+.nomargin {
+	margin: 0;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.searchdivleft {
+	width: 95%;
+}
+
+.searchdivright {
+	padding-right: 24px;
+	min-height: 54px;
+	min-width: 81px;
+}
+
+.searchdivright img {
+	height: 54px;
+	width: 57px;
+}
+
+.widthpercent50 {
+	width: 50%;
+}
+
+.widthpercent100 {
+	width: 100%;
+}
+
+
+.sizepercent100 {
+	height:expression(this.width);
+	width: 100%;
+}
+
+.seeshare {
+	background-color: #0f85b6;
+	height: 151px;
+	font-weight: 700;
+	font-size: 30px;
+	padding-top: 20px;
+	text-align: center;
+    padding-bottom:56px;
+}
+
+.seeshare img{
+	vertical-align:middle;
+    margin-right:7px;
+    width:71px;
+    height:71px;
+}
+
+.seehead {
+	background-color: #0f85b6;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 15px;
+    font-family:'TradeGothic';
+	margin: 0;
+}
+
+.seehead img {
+margin-right:13px;
+vertical-align:middle;
+}
+
+.seeloadmore {
+	text-align: center;
+	font-weight: 700;
+	font-size: 14px;
+	margin-top:-29px;
+	color: #000;
+	background-color:#FFF;
+    font-family:Helvetica;
+}
+
+
+.spanloadmore{
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
+.colorblue {
+	color: #0f85b6;
+}
+
+.colorwhite {
+	color: #FFF;
+}
+
+.fontsie25{
+	font-size:25px;
+	color:#cccccc;
+}
+
+.fontsie26{
+	font-size:25px;
+	color:black;
+}
+
+
+.carousel-caption {
+  position:inherit;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  padding-left:35px;
+  padding-right:35px;
+  padding-bottom:30px;
+  color:#000;
+  background: #ffffff;
+}
+
+
+.div-caption-title{
+	margin-top:-36px;
+	background: #ffffff;
+	padding:6px;
+}
+
+.caption-title{
+	font-weight:bold;
+	font-size: 20px;
+    font-family:'TradeGothic';
+}
+
+.caption-date{
+	font-weight:bold;
+	font-size: 18px;
+	padding-bottom:4px;
+    font-family:'Helvetica';
+}
+
+.caption-content{
+	font-size: 16px;
+    padding-bottom:54px;
+    font-family:'Helvetica';
+}
+
+.paddingbottom19{
+	padding-bottom:19px;
+}
+
+.textaligncenter{
+		text-align: center;
+}
+
+.cursorpointer{
+	cursor: pointer;
+}
+
+.active{
+	color:red;
+}
+
+.seecontent{
+	position:absolute;
+	height:100%;
+	width: 50%;
+	padding:10px; 
+    min-width:148px;
+	font-size: 15px;
+	font-weight:bold;
+	overflow:hidden;
+	font-family:'TradeGothic';
+}
+
+

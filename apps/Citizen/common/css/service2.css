@@ -1,0 +1,101 @@
+.div-title {
+  width: 100%;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  
+}
+.form-control1{
+	height:500px;
+}
+.Date>input{
+	width:500px;
+	height:10px;
+}
+.Time{
+	width:100%;
+	height:auto;
+}
+
+.div-title > div {
+  float: right;
+  margin-top: 5px;
+}
+.div-title >div> img {
+  width:30px;
+  height:16px;
+}
+.div-food {
+  padding: 60px 57px;
+  
+}
+.div-food > img {
+  padding: 0;
+  vertical-align: middle;
+}
+.div-description {
+  font-size: 20px;
+  height: 10px;
+  color:gray;
+}
+.div-map>div>img {
+  width:640px;
+  height: 490px;
+}
+
+.div-map > div> #location{
+  position: absolute;
+  left: 400px;
+  margin-top:-80px;
+}
+.div-map >div> #location > input {
+  background-color: #6b9e60;
+  color:white;
+  font-size: 24px;
+  border:none;
+  width:224px;
+  height: 50px;
+}
+.div-map>#div_submit{
+  height: 180px;
+  
+  padding:60px 4% 60px 4%;
+}
+.div-map> #div_submit>input{
+  background-color: #ff8f71;
+  color:white;
+  
+  width:580px;
+  height:70px;
+  border:none;
+  border-radius: 10px;
+  font-size: 28px;
+}
+#div_submit>input{
+	background-color:#ff8f71;
+	color:white;
+    width:290px;
+    height:35px;
+    font-size: 20px;
+    border:none;
+    margin-left:30px;
+    margin-top:80px;
+    margin-bottom: 60px;
+}
+.btn-group{
+	margin-left:335px;
+	top:-20px;
+}
+#container1{
+	font-weight: bolder;
+}
+.div-Rigga,.div-Warsan{
+	font-weight: bolder;
+}
+.Rigga,.Warsan{
+	color:#ff8f71;
+}
+.Phone1,.Phone2,.Opening1,.Opening2{
+	color:#b8b8b8;
+}
+

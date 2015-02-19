@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="DubaiApp">
+        <wb-resource deploy-path="/" source-path="/apps/Citizen/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/Citizen/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/Citizen/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/Citizen/blackberry10"/>
+        <wb-resource deploy-path="/" source-path="/apps/Citizen/windowsphone8"/>
+        <property name="context-root" value="DubaiApp"/>
+    </wb-module>
+</project-modules>

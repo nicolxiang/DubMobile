@@ -1,0 +1,5 @@
+{
+    "global": false,
+    "namespace": "Contacts",
+    "dependencies": ["com.blackberry.pim.lib","com.blackberry.utils"]
+}

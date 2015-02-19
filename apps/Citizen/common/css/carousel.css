@@ -1,0 +1,67 @@
+/* Stylesheet content from css/see.css in folder common */
+
+.carousel-caption p {
+  line-height:25px;
+  color: #000;
+  margin-bottom: 0;
+}
+
+
+.demo-carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.demo-carousel-control.left {
+  padding-top:12%;
+}
+
+.demo-carousel-control.right {
+  left: auto;
+  right: 0;
+  padding-top:12%;
+}
+
+.carouselheight{
+	height:150px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    margin-top:120px;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+    .carousel-indicators li {
+        display: inline-block;
+        width: 21px;
+        height:21px;
+        margin: 1px;
+        text-indent: -999px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left:8px;
+        background-color:#cccccc;
+    }
+
+    .carousel-indicators .active {
+        margin: 0;
+        width:21px;
+        margin-left:8px;
+        height:21px;
+        background-color:#000000;
+    }

@@ -1,0 +1,47 @@
+
+/* Stylesheet content from css/home.css in folder common */
+.navbar{
+	background: #e84343;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #e84343;
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}
+
+.app-list{
+	padding-top:65px;
+	background:#fff;
+	min-height: -webkit-calc(100% - 65px);
+	min-height: -moz-calc(100% - 65px);
+	min-height: calc(100% - 65px);
+}
+
+.app-box{
+	width:50%;
+	float:left;
+	margin-top: 10px;	
+	text-align:center;
+	padding:5px;	
+	height:expression(this.width);
+}
+
+.clear{
+	clear:both;
+}
+
+.app-img{
+	width:75%;
+	height:expression(this.width);
+}
+
+.app-title{
+	margin-top: 5px;
+	display:block;	
+	font-size: 1.25em;
+	font-weight: 200;
+}
+

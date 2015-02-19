@@ -1,0 +1,42 @@
+
+/* Stylesheet content from css/services.css in folder common */
+.navbar{
+	background: #ff8f71;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #ff8f71;
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}
+
+.service-list{
+	margin-top:65px;
+	background:#fff;
+	margin-bottom: 15px;	
+	min-height: -webkit-calc(100% - 65px);
+	min-height: -moz-calc(100% - 65px);
+	min-height: calc(100% - 65px);
+}
+
+.app-box{
+	width:50%;
+	float:left;
+	text-align:center;
+	padding:10px;
+	height:expression(this.width);
+}
+
+.app-img{
+	width:75%;
+	height:expression(this.width);
+}
+
+.app-title{
+	margin-top: 5px;
+	display:block;	
+	font-size: 1.25em;
+	font-weight: 200;
+}

@@ -1,0 +1,131 @@
+.navbar {
+    background: #7BB76F;
+}
+
+.sidebar-left, .sidebar-right {
+    background: #7BB76F;
+}
+
+    .sidebar-right a.list-group-item {
+        color: #000;
+    }
+
+.view-wrapper {
+    margin-top: 0px;
+    background: #fff;
+}
+
+.div-me {
+    margin-top: 65px;
+    background: #fff !important;
+    margin-bottom: 100px;
+}
+
+    .div-me .text-left {
+        text-align: left;
+    }
+
+    .div-me .text-right {
+        text-align: right;
+    }
+
+    .div-me .text-center {
+        text-align: center;
+    }
+
+    .div-me .title {
+        height: 96px;
+        border-bottom: solid 1px #000;
+        padding-left: 32px;
+        padding-top: 32px;
+        padding-right: 32px;
+    }
+
+    .div-me table {
+        width: 100%;
+    }
+
+        .div-me table td {
+            width: 50%;
+        }
+
+    .div-me .title .display {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .div-me .title .collape {
+        font-size: 22px;
+        text-align: right;
+        padding-top: 0px;
+    }
+
+    .div-me .toolbar {
+        height: 84px;
+        border-bottom: solid 1px #ccc;
+        padding-left: 32px;
+        padding-top: 32px;
+        padding-right: 32px;
+        font-size: 24px;
+    }
+
+    .div-me .list {
+        padding: 0;
+        margin: 0;
+    }
+
+        .div-me .list li {
+            list-style: none;
+        }
+
+        .div-me .list .header {
+            background: #0BD4EC;
+            height: 50px;
+            padding-left: 15px;
+            padding-top: 15px;
+            font-size: 15px;
+        }
+
+        .div-me .list .item {
+            height: 100px;
+            padding-top: 21px;
+            padding-bottom: 18px;
+            padding-left: 20px;
+            border-bottom: solid 1px #ccc;
+        }
+
+            .div-me .list .item .item-title {
+                color: #699C5F;
+            }
+
+            .div-me .list .item .action {
+                color: #7BB76F;
+            }
+
+                .div-me .list .item .action i {
+                    font-size: 24px;
+                    padding-right: 10px;
+                }
+
+                .div-me .list .item .action td {
+                    padding-right: 20px;
+                }
+
+.app-img {
+    height: 70%;
+    padding-right: 10%;
+}
+
+.app-img-font {
+    padding-right: 10%;
+}
+
+.app-img-font-file {
+    padding-right: 10%;
+    color: red;
+}
+
+.app-img-nav {
+    height: 70%;
+    padding-right: 3%;
+}

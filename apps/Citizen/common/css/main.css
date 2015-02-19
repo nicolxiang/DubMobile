@@ -1,0 +1,222 @@
+
+/* Stylesheet content from css/main.css in folder common */
+.fullscreen {
+	margin: auto;
+	position: absolute
+}
+
+#loginPanel {
+	width: 300px;
+	height: 400px;
+	vertical-align: middle;
+	background: #ccc;
+	border: solid 2px gray;
+	margin: auto;
+	margin-top: 50px;
+}
+
+body {
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+#header {
+	text-align: center;
+	background-color: #1D4D90;
+	color: #F9FAFB;
+	font-size: 16px;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid white;
+	position: fixed;
+	width: 100%;
+}
+
+#wrapper {
+	width: 90%;
+	margin: auto;
+	padding-top: 38px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.appButton {
+	width: 100%;
+	height: 3em;
+	font-size: 0.8em;
+	margin: 10px auto;
+}
+
+p {
+	padding: 10px;
+}
+
+/* Provide different styling for iOS 7. */
+body.wl_ios7 {
+	padding-top: 0 !important;
+}
+
+.wl_ios7 #header {
+	padding-top: 9px;
+}
+
+.wl_ios7 #wrapper {
+	padding-top: 55px;
+}
+
+/* applet */
+.app {
+	background: #fff;
+}
+
+.navbar-app {
+	color: #fff;
+	background: #52614f;
+}
+
+.navbar-app .btn-navbar, .navbar-app .btn {
+	color: #fff;
+}
+
+.sidebar-left {
+	background: #0c0d0c;
+}
+
+.scrollable-header {
+	height: 206px;
+	color:#d15d43;
+	font-size: 20px;
+	padding-top: 110px;
+	text-align: center;
+/*	margin-bottom: 20px;*/
+}
+
+.sidebar-left .list-group-item {
+	background: transparent;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none !important;
+	font-size: 14px;
+	color: #b7c7b7!important;;
+}
+
+.sidebar-left .list-group-item.active, .list-group-item.active:focus {
+	background: transparent;
+	color: #d15d43!important;;
+	border: none;
+}
+
+.sidebar-left .list-group-item i {
+	margin-right: 15px;
+}
+.app-user{
+	position: absolute;
+	top: 12px;
+    background: url("../images/user.png") no-repeat top center;
+    height: 136px;
+    width: 100%;
+    background-size: 40%;
+}
+
+.app-user img{
+    opacity: 0;
+}
+
+.services-list {
+	padding-top: 22px;
+}
+
+.services-list > .list-group-item,.services-list {
+	font-size: 16px;
+}
+.services-list > .list-group-item h1 {
+	color: #abadaa;
+	font-size: 16px;
+	padding-left: 25px;
+}
+.services-list > .list-group {
+	margin-left: 30px;
+}
+
+.services-list > .list-group .list-group-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.services-list > .list-group a{
+	font-size: 16px;
+	color: #343834;
+}
+.services-list > .list-group a span {
+	width: 70%;
+}
+.services-list > .list-group a:hover {
+	color: #d15d43;
+}
+
+.loginForm legend {
+	border: none !important;
+    height: 130px;
+    background: url("../images/logo.png") no-repeat center top;
+    background-size: 80%;
+    width:100%:
+}
+
+.display-ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; /**for IE**/
+}
+
+.navbar-brand {
+	padding: 25px 15px 0 15px;	
+}
+
+.narbar-app .btn-navbar, .navbar-app .btn {
+	padding-top: 25px;
+	line-height: 20px;
+    height: 50px;
+}
+/* Stylesheet content from css/main.css in folder iphone */
+
+/* this CSS file extends the application CSS file found under common\css */
+
+/*Optional iOS 7 status bar filler*/
+#wl_ios7bar{
+	background-color: white;
+	height: 15pt;
+	position: fixed;
+	top: 0;
+	left : 0;
+	width:100%;
+}
+body.wl_ios7{
+	padding-top: 15pt;
+}
+
+sidebar-left {
+    width: 280px;
+}
+
+.sidebar-right {
+    width: 250px;
+}
+
+.sidebar-left-in .app {
+    -webkit-transform: translate3d(280px, 0, 0);
+    transform: translate3d(280px, 0, 0);
+}
+
+.sidebar-right-in .app {
+    -webkit-transform: translate3d(-250px, 0, 0);
+    transform: translate3d(-250px, 0, 0);
+}
+
+.logo-ar {
+    background: url("../images/logo-ar.png") no-repeat center top!important;
+    background-size: 80%;
+}

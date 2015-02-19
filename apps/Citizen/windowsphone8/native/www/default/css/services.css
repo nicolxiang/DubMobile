@@ -1,0 +1,35 @@
+﻿
+/* Stylesheet content from css/services.css in folder common */
+.navbar{
+	background: #ff8f71;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #ff8f71;
+}
+
+.app-box{
+	width:50%;
+	float:left;
+	text-align:center;
+	padding:10px;
+	height:expression(this.width);
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}
+
+.view-wrapper{
+	margin-top:65px;
+	background:#fff;
+}
+
+.app-img{
+	width:50%;
+	height:expression(this.width);
+}
+
+.app-title{
+	display:block;	
+}

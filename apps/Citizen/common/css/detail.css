@@ -1,0 +1,241 @@
+/* Stylesheet content from css/main.css in folder common */
+.navbar {
+    background: #7BB76F;
+}
+
+.sidebar-left, .sidebar-right {
+    background: #7BB76F;
+}
+
+    .sidebar-right a.list-group-item {
+        color: #000;
+    }
+
+.view-wrapper {
+    margin-top: 0px;
+    background: #fff;
+}
+
+.div-detail {
+    margin-top: 0px;
+    background: #fff;
+}
+
+    .div-detail .float-left {
+        float: left;
+        margin: 15px;
+    }
+
+    .div-detail .float-right {
+        float: right;
+    }
+
+    .div-detail .list {
+        padding: 0;
+        margin: 0;
+    }
+
+        .div-detail .list table {
+            width: 100%;
+        }
+
+        .div-detail .list .header {
+            background: #0BD4EC;
+            height: 50px;
+            padding-left: 15px;
+            padding-top: 15px;
+            font-size: 15px;
+        }
+
+            .div-detail .list .header .thleft {
+                text-align: center;
+            }
+
+            .div-detail .list .header .thmiddle {
+                padding-left: 15px;
+            }
+
+            .div-detail .list .header .thright {
+                text-align: center;
+            }
+
+.detail-title {
+    font-size: 20px;
+    word-wrap: break-word;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.div-detail .divide {
+    border-bottom: solid 1px #ccc;
+}
+
+.div-detail .list .detail-item {
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: none;
+}
+
+    .div-detail .list .detail-item .item-title {
+        color: #699C5F;
+    }
+
+    .div-detail .list .detail-item .action {
+        color: #7BB76F;
+    }
+
+        .div-detail .list .detail-item .action i {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .div-detail .list .detail-item .action td {
+            padding-right: 10px;
+        }
+
+            .div-detail .list .detail-item .action td:first-child {
+                padding-bottom: 5px;
+            }
+
+            .div-detail .list .detail-item .action td:last-child {
+                padding-top: 5px;
+            }
+
+/*.div-detail .list .detail-item .action td:first-child {
+                padding-bottom: 10px;
+            }*/
+.score-sec {
+    content: "";
+    /*position: absolute;*/
+    width: 3px;
+    /*top: -38px;*/
+    /*bottom: -38px;*/
+    /*left: 40px;*/
+    background-color: #0BD4EC;
+    height: 143px;
+}
+
+    .score-sec .number {
+        left: -10px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 52px;
+        position: relative;
+        z-index: 2;
+        font-size: 14px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        font-weight: 700;
+        text-align: center;
+        background-color: #fff;
+        border-width: 3px;
+        border-style: solid;
+        border-color: #0BD4EC;
+        top: 50%;
+    }
+
+    .score-sec .title {
+        /*position: relative;
+                display: inline-block;
+                vertical-align: top;
+                line-height: 32px;*/
+        width: auto;
+        font-weight: 700;
+        height: 100%;
+    }
+
+    .score-sec .title-ss {
+        background: #0BD4EC;
+    }
+
+.score-seca {
+    content: "";
+    /*position: absolute;*/
+    width: 3px;
+    /*top: -38px;*/
+    /*bottom: -38px;*/
+    /*left: 40px;*/
+    background-color: #0BD4EC;
+    height: 210px;
+}
+
+    .score-seca .number {
+        left: -10px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 78px;
+        position: relative;
+        z-index: 2;
+        font-size: 14px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        font-weight: 700;
+        text-align: center;
+        background-color: #fff;
+        border-width: 3px;
+        border-style: solid;
+        border-color: #0BD4EC;
+        top: 50%;
+    }
+
+    .score-seca .title {
+        /*position: relative;
+                display: inline-block;
+                vertical-align: top;
+                line-height: 32px;*/
+        width: auto;
+        font-weight: 700;
+        height: 100%;
+    }
+
+    .score-seca .title-ss {
+        background: #0BD4EC;
+    }
+
+.set-mile {
+    padding-left: 15px;
+}
+
+.set-header {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.set-footer {
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.set-space {
+    width: 3px;
+    background-color: #B4C2DA;
+}
+
+.set-date {
+    height: 100px;
+    width: 20%;
+    text-align: center;
+}
+
+.set-font {
+    text-align: center;
+    font: 16px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.app-img {
+    height: 60%;
+    /*padding-right: 10%;*/
+    /*margin-right: 10%;*/
+}
+
+.app-img-font {
+    padding-right: 10%;
+}

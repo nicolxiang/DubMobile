@@ -1,0 +1,225 @@
+<link href="css/payment.css" rel="stylesheet">
+<style type="text/css">
+    
+
+     .myDropDownList {
+         margin-top: 14px; 
+         margin-right: 15px;
+     }
+    .Service2 .section-header {
+        color: #000000;  
+    }
+    .TxtAppointment , .TxtAppointment:hover,.TxtAppointment:active {
+        width: 100%;
+        height: 100%;
+        font-size: 1.3em;
+        font-weight: 100;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .credit-card-item {
+        border-bottom: #999999 1px solid;
+        margin-left: 15px;
+        padding-left: 0;
+    }
+    .credit-card-item-border-Last {
+        border-width: 0;
+        border: none;    
+    }
+    .credit-card-group {
+        border-color: #000000;
+   
+    }
+    .SwichLink {
+        height: 52px;
+        width: 106px;
+        border: solid #7ab76e 1px;
+        line-height: 52px;
+        text-align: center;
+       
+    }
+
+    .SwichLink-left {
+        border-top-left-radius:6px;
+        border-bottom-left-radius:6px;
+
+    }
+    .SwichLink-right {
+         border-top-right-radius:6px;
+        border-bottom-right-radius:6px;
+    }
+
+    .ListAndMapViewContent {
+        margin-top: 40px;
+        height: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 1.4em;
+        color: #999999;
+        margin-bottom: 10px;
+    }
+    .ListAndMapViewContent div:first-child {
+        margin-top: 30px;
+    }
+    .SwichContent {
+        padding: 0;
+        float: right;
+        width: 212px;
+        font-size: 1.2em;
+    }
+    .SwichLinkActive {
+        background-color: #7ab76e;
+        color: #ffffff;
+    }
+    .CleanFloat {
+        clear: right;
+    }
+    .ico-selected-blue {
+
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .CleanSelected .ico-selected-blue {
+          background-image: none;
+      border: 1px solid #999999;
+      border-radius: 50px;
+    }
+
+  .Contract {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 1.2em;
+      margin-top: 30px; 
+      padding-bottom: 30px;
+  }
+
+  .Contract label {
+      color: #999999;
+      margin-right: 5px;
+  }
+  .NextBtn {
+      width: 100%;
+      border: none;
+      text-align: right;
+      padding-right: 30px;
+      height: 69px;
+      line-height: 69px;
+      background-color: #ff8f71;
+      border-radius: 4px;
+      font-size: 1.5em;
+      color: #ffffff;
+      letter-spacing: 1px;
+  }
+  .Contract .Title {
+      color: #ff8f71;
+  }
+  .MapView img{
+      width: 100%;
+  }
+</style>
+
+<div class="scrollable Service2">
+    <div class="scrollable-content view-wrapper">
+        <div class="section-header">Medical Fitness Certificate(XT) 
+            <i class="pull-right fa ico-arrow-down myDropDownList"></i>
+        </div>
+   
+        <div class="credit-card-group">
+
+            <div class="credit-card-item">
+                <input type="text" class="TxtAppointment" placeholder="Appointment Date" />
+            </div>
+            
+            <div class="credit-card-item credit-card-item-border-Last">
+                <input type="text" class="TxtAppointment" placeholder="Appointment Time" />
+            </div>
+        </div>
+                
+        <div class="credit-card-group ListAndMapViewContent">
+            <div class="pull-left">
+                Clinic Location   
+            </div>  
+            <div class="SwichContent">
+                <button class="SwichLink SwichLink-left SwichLinkActive" id="ListLink" onclick="SwichView('List');">List</button><button id="MapLink" class="SwichLink SwichLink-right" onclick="SwichView('Map');">Map</button>  
+            </div>
+        </div>
+        <div class="CleanFloat"></div>
+        
+        <div class="credit-card-group ListView">
+            <div class="credit-card-item CleanSelected">
+                DM Clinic -  AI Rigga   <i class="pull-right ico-selected-blue"></i>
+            </div>
+            <div class="credit-card-item CleanSelected">
+                DM Clinic -  AI Warsan <i class="pull-right ico-selected-blue"></i>
+            </div>
+            <div class="credit-card-item" style="border: 0;">
+                DM Clinic -  AI Flash  <i class="pull-right ico-selected-blue"></i>
+            </div>
+        </div>
+        
+        <div class="credit-card-group MapView" style="display: none;">
+            <img src="../images/locationMap.png" />
+        </div>
+
+        <div class="credit-card-group Contract">
+            <div class="Title">
+                DM Clinic -AI Rigga
+            </div>    
+            
+            <div>
+                <label> Phone Number:</label> +971 4 223 2389
+            </div>
+            <div>
+                <label>Opening Hours:</label> 07:30 - 14: 30
+            </div>
+            
+            <div style="margin-top: 20px;"></div>
+
+            <div class="Title">
+                DM Clinic -AI Warsan
+            </div>
+            
+            <div>
+                <label> Phone Number:</label>  +971 4 223 2389
+            </div>
+            <div>
+                <label>Opening Hours:</label> 07:30 - 14: 30
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px;margin-bottom: 40px;">
+            <a href="#/payment"><button class="NextBtn">Next</button> </a> 
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+    function SwichView(type) {
+        if (type == "List") {
+            $(".MapView").hide();
+            $(".ListView").show();
+            $("#MapLink").removeClass("SwichLinkActive");
+            $("#ListLink").addClass("SwichLinkActive");
+          
+        } else {
+            
+            $(".ListView").hide();
+            $(".MapView").show();
+            $("#ListLink").removeClass("SwichLinkActive");
+            $("#MapLink").addClass("SwichLinkActive");
+        }
+    }
+
+    $(".credit-card-item").on("click", function () {
+        $(this).toggleClass("CleanSelected");
+    });
+
+</script>
+    
+  
+

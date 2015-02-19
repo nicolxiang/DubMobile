@@ -1,0 +1,50 @@
+﻿
+/* Stylesheet content from css/home.css in folder common */
+
+/* Stylesheet content from css/home.css in folder common */
+.navbar{
+	background: #e84343;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #e84343;
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}
+
+
+
+.app-box{
+	width:50%;
+	float:left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align:center;
+	padding:10px;	
+	height:expression(this.width);
+}
+
+.app-box:last-child{
+	margin-bottom: 15px;
+}
+
+.view-wrapper{
+	margin-top:65px;
+	background:#fff;
+	margin-bottom: 15px;
+}
+
+.app-img{
+	width:75%;
+	height:expression(this.width);
+}
+
+.app-title{
+	margin-top: 5px;
+	display:block;	
+	font-size: 2.2em;
+	font-weight: 200;
+}
+

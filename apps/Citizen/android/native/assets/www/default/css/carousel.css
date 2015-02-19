@@ -1,0 +1,50 @@
+
+/* Stylesheet content from css/carousel.css in folder common */
+/* Stylesheet content from css/see.css in folder common */
+
+.carousel-caption h4,
+.carousel-caption p {
+  line-height:25px;
+  color: #000;
+  font-family:'Traditional Arabic';
+}
+
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+  font-family:'Traditional Arabic';
+}
+
+.spanloadmore{
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.demo-carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  padding-top:9%;
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.demo-carousel-control.left {
+
+}
+
+.demo-carousel-control.right {
+  left: auto;
+  right: 0;
+}
+
+.carouselheight{
+	height:150px;
+}

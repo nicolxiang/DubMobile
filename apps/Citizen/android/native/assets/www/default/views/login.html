@@ -1,0 +1,30 @@
+<div ui-content-for="title">
+	<span></span>
+</div>
+
+<div class="scrollable">
+	<div class="scrollable-content section"
+		data-ng-controller="LoginController">
+
+		<form name="loginForm" class="loginForm" data-ng-submit="submitForm()">
+			<fieldset>
+                <legend ng-class="{'logo-ar': login.toggleLang}"></legend>
+				<div class="form-group">
+					<label><span ng-bind="lblUserName"></span></label> <input type="text" class="form-control"
+						placeholder="Enter User Name" ng-model="loginUser.username" />
+				</div>
+				<div class="form-group">
+					<label><span ng-bind="lblPassword"></span></label> <input type="text" class="form-control"
+						placeholder="Enter Password" ng-model="loginUser.password" />
+				</div>	
+				<div class="form-group">
+					<label><span ng-bind="lblLanguage"></span></label>			
+                        <br>
+                        <ui-switch ng-model='login.toggleLang' ng-click="ChangeLanguage()"></ui-switch>
+                </div>
+			</fieldset>
+			<hr>
+			<button type="submit" class="btn btn-primary btn-block"><span ng-bind="btnSignIn"></span></button>
+		</form>
+	</div>
+</div>

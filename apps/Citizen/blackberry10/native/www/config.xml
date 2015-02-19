@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="Citizen" version="1.0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" rim:backButton="exit">
+    <name>Citizen</name>
+    <author email="application author's e-mail">application's author</author>
+    <description>
+       Citizen
+  	</description>
+    <license href="http://opensource.org/licenses/alphabetical">
+    </license>
+    <access subdomains="true" uri="file:///store/home" />
+    <access subdomains="true" uri="file:///SDCard" />
+    
+    <!-- start_worklight_host_server do not change this line-->
+  <access subdomains="true" uri="http://192.168.239.1" />
+  <!-- end_worklight_host_server do not change this line-->
+  
+    <access subdomains="true" uri="*" />
+    <icon src="icon.png" />
+  	<rim:splash src="splash-1024x600.png" />
+  	<rim:splash src="splash-600x1024.png" />
+ 	<rim:splash src="splash-1280x768.png" />
+ 	<rim:splash src="splash-768x1280.png" />
+    <content src="webresources/skinLoader.html" />
+    <rim:permissions>
+        <rim:permit>read_device_identifying_information</rim:permit>
+        <rim:permit>access_shared</rim:permit>
+        <rim:permit>read_geolocation</rim:permit>
+        <rim:permit>access_pimdomain_contacts</rim:permit>
+    </rim:permissions>
+    <feature id="blackberry.invoke" name="blackberry.invoke" value="blackberry.invoke" />
+    <feature id="blackberry.app" name="blackberry.app" value="blackberry.app" />
+    
+<!-- <feature id="blackberry.system" name="blackberry.system" value="blackberry.system"/>
+	<feature id="blackberry.find" name="blackberry.find" value="blackberry.find" />
+	<feature id="blackberry.identity" name="blackberry.identity" value="blackberry.identity" />
+ 	<feature id="blackberry.identity.phone" name="blackberry.identity.phone" value="blackberry.identity.phone" />
+ 	<feature id="blackberry.pim.Address" name="blackberry.pim.Address" value="blackberry.pim.Address" />
+ 	<feature id="blackberry.pim.Contact" name="blackberry.pim.Contact" value="blackberry.pim.Contact" />
+ 	<feature id="blackberry.io.file" name="blackberry.io.file" value="blackberry.io.file" />
+	<feature id="blackberry.utils" name="blackberry.utils" value="blackberry.utils" />
+	<feature id="blackberry.io.dir" name="blackberry.io.dir" value="blackberry.io.dir" />
+	<feature id="blackberry.app.event" name="blackberry.app.event" value="blackberry.app.event" />
+	<feature id="blackberry.system.event" name="blackberry.system.event" value="blackberry.system.event" />
+	<feature id="blackberry.widgetcache" name="blackberry.widgetcache" value="blackberry.widgetcache" />
+	<feature id="blackberry.media.camera" name="blackberry.media.camera" value="blackberry.media.camera" />
+	<feature id="blackberry.ui.dialog" name="blackberry.ui.dialog" value="blackberry.ui.dialog" />
+	<feature id="blackberry.connection" name="blackberry.connection" value="blackberry.connection" />
+	<feature id="blackberry.bbm.platform" name="blackberry.bbm.platform" value="blackberry.bbm.platform" />
+	<feature id="blackberry.invoke.card" name="blackberry.invoke.card" value="blackberry.invoke.card" />
+	<feature id="blackberry.pim.contacts" name="blackberry.pim.contacts" value="blackberry.pim.contacts" />
+	<feature id="blackberry.ui.contextmenu" name="blackberry.ui.contextmenu" value="blackberry.ui.contextmenu" />
+	<feature id="blackberry.io.filetransfer" name="blackberry.io.filetransfer" value="blackberry.io.filetransfer" />
+	<feature id="blackberry.io" name="blackberry.io" value="blackberry.io" />
+	<feature id="blackberry.invoked" name="blackberry.invoked" value="blackberry.invoked" />
+	<feature id="blackberry.push" name="blackberry.push" value="blackberry.push" />
+	<feature id="blackberry.media.microphone" name="blackberry.media.microphone" value="blackberry.media.microphone" /> -->
+	
+    <feature id="com.blackberry.utils" name="com.blackberry.utils" />
+    <feature id="com.blackberry.pim.lib" name="com.blackberry.pim.lib" />
+    <feature id="Battery" name="Battery" value="Battery" />
+    <feature id="Camera" name="Camera" value="Camera" />
+    <feature id="Contacts" name="Contacts" value="Contacts" />
+    <feature id="Device" name="Device" value="Device" />
+    <feature id="Accelerometer" name="Accelerometer" value="Accelerometer" />
+    <feature id="Compass" name="Compass" value="Compass" />
+    <feature id="Notification" name="Notification" value="Notification" />
+    <feature id="org.apache.cordova.file" name="File" value="File" />
+    <feature id="FileTransfer" name="FileTransfer" value="FileTransfer" />
+    <feature id="Geolocation" name="Geolocation" value="Geolocation" />
+    <feature id="Globalization" name="Globalization" value="Globalization" />
+    <feature id="Media" name="Media" value="Media" />
+    <feature id="Capture" name="media-capture" value="Capture" />
+    <feature id="NetworkStatus" name="NetworkStatus" value="NetworkStatus" />
+    <feature id="SplashScreen" name="SplashScreen" value="SplashScreen" />
+    <feature id="Vibration" name="Vibration" value="Vibration" />
+ </widget>
