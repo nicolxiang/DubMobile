@@ -1,4 +1,11 @@
-/.project
+/.idea/.name
+/.idea/common.iml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/scopes/scope_settings.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
 /angular/angular-route.js
 /angular/angular-route.min.js
 /angular/angular-sanitize.js
@@ -227,7 +234,6 @@
 /views/services.html
 /views/sidebar.html
 /views/UserOther.html
-/views/~$ymentSubmit.html
 /worklight/cordova.js
 /worklight/cordova_plugins.js
 /worklight/messages/de/messages.json

@@ -1,284 +1,301 @@
 ﻿
 /* Stylesheet content from css/discover.css in folder common */
-.navbar{
-	background: #ad4290;
+.navbar {
+    background: #ad4290;
 }
 
-.sidebar-left, .sidebar-right{
-	background: #ad4290;
+.sidebar-left, .sidebar-right {
+    background: #ad4290;
 }
 
-.sidebar-right a.list-group-item{
-	color:#000;
-}
-
-
-.discover-content {
-    background-color:#ad4290;
-    font-family:Helvetica;
-}
-
-.discover-content .bgColor-1{
-    background-color:#ad4290;
-}
-
-.discover-content .bgColor-2{
-    background-color:#973b7e;
-}
-
-.discover-content .fontColor-1{
-    color:white;
-}
-
-.discover-content .fontColor-2{
-    color:#973b7e;
-}
-
-.discover-content .weightBold{
-    font-weight:bold;
-}
-
-
-
-.discover-content .header {
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    height: 40px;
-    line-height: 40px;
-    font-family:TradeGothic;
-    font-weight:bold;
-}
-
-.discover-content .zinc {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    padding-top: 29px;
-    padding-bottom: 19px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.discover-content .headPortrait {
-    background-image: url('../images/discover/headPortrait.png');
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    height:250px;
-    width:40%; float:left;
-}
-
-
-
-.discover-content .body {
-    width: 60%; float: left; background-color: white; height: 250px; padding-top: 20px; padding-left:20px;
-}
-
-.discover-content .quotationMarks {
-    height: 26px;
-    font-size: 20px;
-}
-
-.discover-content .quotationMarks_2 {
-    position: relative;
-    top: 8px;
-}
-
-.discover-content .stormHuda {
-    font-size: 15px;
-    line-height: 19px;
-    width: 60%;
-}
-
-.discover-content .sheikhmohamm {
-    font-size: 12px;
-    color: black;
-    font-weight:bold;
-    clear:both; 
-    position:relative;
-    top:-40px;
-    padding-left: 20px;
-}
-
-    .discover-content .sheikhmohamm span {
-        display: inline-block;
+    .sidebar-right a.list-group-item {
+        color: #000;
     }
 
 
-.discover-content .newToDubaiList {
-    background-color: #f0f0f0;
+.discover-content {
+    background-color: #ad4290;
+    font-family: Helvetica;
+    margin-top: -3px;
 }
 
-.discover-content .newToDubaiList table {
-    width: 100%;
-}
+    .discover-content .bgColor-1 {
+        background-color: #ad4290;
+    }
 
-.discover-content .newToDubaiList table td {
-    width: 50%;
-}
+    .discover-content .bgColor-2 {
+        background-color: #973b7e;
+    }
 
-.discover-content .newToDubaiList table td.img {
-    width: 100%;
-    height: auto;
-}
+    .discover-content .fontColor-1 {
+        color: white;
+    }
 
-.discover-content .newToDubaiList table td.content {
-    font-size: 15px;
-    line-height:16px;
-    vertical-align: top;
-    padding: 10px;
-    position: relative;
-    font-weight:bold;
-}
+    .discover-content .fontColor-2 {
+        color: #973b7e;
+    }
 
-.discover-content .newToDubaiList table .triangle {
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
-}
-
-
-.discover-content .loadMore {
-    text-align: center;
-    font-size: 12px;
-    color: black;
-    padding-bottom: 15px;
-}
-
-.discover-content .loadMoreImg {
-    clear: both;
-    margin-top: -20px;
-    color: #c7256e;
-    text-align: center;
-}
+    .discover-content .weightBold {
+        font-weight: bold;
+    }
 
 
 
-.discover-content .WedtherBody {
-    
-}
+    .discover-content .header {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        height: 40px;
+        line-height: 40px;
+        font-family: TradeGothic;
+        font-weight: bold;
+    }
+
+    .discover-content .zinc {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding-top: 29px;
+        padding-bottom: 19px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .discover-content .headPortrait {
+        background-image: url('../images/discover/headPortrait.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 250px;
+        width: 40%;
+        float: left;
+    }
+
+    .discover-content .main{
+        background-color:white; 
+        height:250px;
+        background-image: url('../images/discover/headPortrait.png');
+        background-repeat: no-repeat;
+        background-size: 114px 100%;
+        background-position: 100% 0%;
+    }
+
+    .discover-content .body {
+        float: left;
+        height: 250px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .discover-content .quotationMarks {
+        display: block;
+        height: 25px;
+        width: 25px;
+        font-size: 20px;
+        background-image: url('../images/discover/dm_home_discover_101.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .discover-content .quotationMarks_2 {
+        position: relative;
+        top: 16px;
+        background-image: url('../images/discover/dm_home_discover_102.png');
+        display: inline-block;
+    }
+
+    .discover-content .stormHuda {
+        font-size: 15px;
+        line-height: 23px;
+        font-weight:bold;
+        width: 60%;
+    }
+
+    .discover-content .sheikhmohamm {
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+        clear: both;
+        position: relative;
+        top: -30px;
+        padding-left: 20px;
+    }
+
+
+    .discover-content .newToDubaiList {
+        background-color: #f0f0f0;
+    }
+
+        .discover-content .newToDubaiList table {
+            width: 100%;
+        }
+
+            .discover-content .newToDubaiList table td {
+                width: 50%;
+            }
+
+                .discover-content .newToDubaiList table td.img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .discover-content .newToDubaiList table td.content {
+                    font-size: 15px;
+                    line-height: 16px;
+                    vertical-align: top;
+                    padding: 10px;
+                    position: relative;
+                    font-weight: bold;
+                }
+
+            .discover-content .newToDubaiList table .triangle {
+                position: absolute;
+                right: 0px;
+                bottom: 10px;
+            }
+
+
+    .discover-content .loadMore {
+        text-align: center;
+        font-size: 12px;
+        color: black;
+        padding-bottom: 15px;
+    }
+
+    .discover-content .loadMoreImg {
+        clear: both;
+        margin-top: -20px;
+        color: #c7256e;
+        text-align: center;
+    }
 
 
 
-.discover-content .WedtherBody .sunImg {
-    width: 45%;
-    float: left;
-    height: 200px;
-    background-image: url('../images/discover/dm_home_discover_23.png');
-    background-repeat: no-repeat;
-    background-position: 55% 50%;
-    background-size:80%;
-}
-
-.discover-content .WedtherBody .temperature {
-    width: 55%;
-    float: right;
-    color: white;
-    font-size: 22px;
-    height: 200px;
-}
-
-.discover-content .WedtherBody .temperature .t {
-    font-size: 100px;
-    font-family:TradeGothic;
-    font-weight:bold;
-}
-
-.discover-content .WedtherBody .temperatureDiv {
-    clear: both;
-}
-
-.discover-content .WedtherBody .temperatureDiv .item {
-    width: 20%;
-    float: left;
-    color: white;
-    text-align: center;
-}
-
-.discover-content .WedtherBody .temperatureDiv span {
-    display: block;
-    width: 100%;
-    font-size: 22px;
-}
-
-.discover-content .WedtherBody .temperatureDiv span.spanImg {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height:64px;
-}
-
-.discover-content .WedtherBody .temperatureDiv span.fontSize {
-    font-size: 18px;
-}
-
-.discover-content .WedtherBody .temperatureDetail {
-    clear: both;
-}
-
-.discover-content .WedtherBody .temperatureDetail .item {
-    width: 50%;
-    float: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.discover-content .WedtherBody .temperatureDetail .item span {
-    display: block;
-    width: 100%;
-    color: white;
-    font-size: 18px;
-}
-
-.discover-content .WedtherBody .temperatureDetail .item .one {
-    font-weight: bold;
-    padding-left: 12%;
-}
+    .discover-content .WedtherBody {
+    }
 
 
-.discover-content .WedtherBody .emergencyItemTabel {
-    width:100%;
-    clear:both;
-}
 
-.discover-content .WedtherBody .emergencyItemTabel td
-{
-    width:25%;
-    border-right:solid 1px #ddd;
-    padding-bottom:15px;
-}
+        .discover-content .WedtherBody .sunImg {
+            width: 45%;
+            float: left;
+            height: 170px;
+            background-image: url('../images/discover/dm_home_discover_23.png');
+            background-repeat: no-repeat;
+            background-position: 70% 40%;
+            /*background-size: 50%;*/
+        }
 
-.discover-content .WedtherBody .emergencyItemTabel td span {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
+        .discover-content .WedtherBody .temperature {
+            width: 55%;
+            float: right;
+            color: white;
+            font-size: 22px;
+            height: 170px;
+        }
 
-.discover-content .WedtherBody .emergencyItemTabel td span.oneImg {
-    height: 100px;
-    background-image: url('../images/discover/dm_home_discover_43.png');
-}
+            .discover-content .WedtherBody .temperature .t {
+                font-size: 90px;
+                font-family: TradeGothic;
+                font-weight: bold;
+            }
 
-.discover-content .WedtherBody .emergencyItemTabel td span.twoImg {
-    height: 100px;
-    background-image: url('../images/discover/dm_home_discover_46.png');
-}
+        .discover-content .WedtherBody .temperatureDiv {
+            clear: both;
+        }
 
-.discover-content .WedtherBody .emergencyItemTabel td span.threeImg {
-    height: 100px;
-    background-image: url('../images/discover/dm_home_discover_49.png');
-}
+            .discover-content .WedtherBody .temperatureDiv .item {
+                width: 20%;
+                float: left;
+                color: white;
+                text-align: center;
+                font-family:TradeGothicLT;
+            }
 
-.discover-content .WedtherBody .emergencyItemTabel td span.fourImg {
-    height: 100px;
-    background-image: url('../images/discover/dm_home_discover_52.png');
-}
+            .discover-content .WedtherBody .temperatureDiv span {
+                display: block;
+                width: 100%;
+                font-size: 22px;
+            }
+
+                .discover-content .WedtherBody .temperatureDiv span.spanImg {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+
+            .discover-content .WedtherBody .temperatureDiv .img {
+                /*width: 50%;*/
+            }
+
+            .discover-content .WedtherBody .temperatureDiv span.fontSize {
+                font-size: 18px;
+            }
+
+        .discover-content .WedtherBody .temperatureDetail {
+            clear: both;
+        }
+
+            .discover-content .WedtherBody .temperatureDetail .item {
+                width: 50%;
+                float: left;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                
+            }
+
+                .discover-content .WedtherBody .temperatureDetail .item span {
+                    display: block;
+                    width: 100%;
+                    color: white;
+                    font-size: 18px;
+                }
+
+                .discover-content .WedtherBody .temperatureDetail .item .one {
+                    font-weight: bold;
+                    padding-left: 12%;
+                }
 
 
-.discover-content
-{
-    width:100%;
-}
+        .discover-content .WedtherBody .emergencyItemTabel {
+            width: 100%;
+            clear: both;
+        }
+
+            .discover-content .WedtherBody .emergencyItemTabel td {
+                width: 25%;
+                border-right: solid 1px #ddd;
+                padding-bottom:10px;
+            }
+
+                .discover-content .WedtherBody .emergencyItemTabel td span {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    /*font-size: 10px;*/
+                    /*font-weight:bold;*/
+                     font-size: 0.8em;
+                }
+
+                    .discover-content .WedtherBody .emergencyItemTabel td span.spanImg {
+                        height: 65px;
+                        padding-top: 15px;
+                    }
+
+                   
+
+                    .discover-content .WedtherBody .emergencyItemTabel td span .img1 {
+                        /*width: 25%;
+                        position: relative;*/
+                        margin-top: -6px;
+                        max-height: 42px;
+                    }
+
+                    .discover-content .WedtherBody .emergencyItemTabel td span img {
+                        max-width: 40px;
+                    }
+
+                    .emergencyItemTabel tr td span:first-child {
+                        margin-top: 8px;
+                        margin-bottom: 4px;
+                       
+                    }

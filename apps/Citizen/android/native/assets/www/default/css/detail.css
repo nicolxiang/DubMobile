@@ -116,7 +116,7 @@
     /*bottom: -38px;*/
     /*left: 40px;*/
     background-color: #0BD4EC;
-    height: 122px;
+    height: 143px;
 }
 
     .score-sec .number {
@@ -162,7 +162,7 @@
     /*bottom: -38px;*/
     /*left: 40px;*/
     background-color: #0BD4EC;
-    height: 185px;
+    height: 210px;
 }
 
     .score-seca .number {
@@ -230,4 +230,14 @@
     font: 16px;
     font-weight: bold;
     font-family: Arial;
+}
+
+.app-img {
+    height: 60%;
+    /*padding-right: 10%;*/
+    /*margin-right: 10%;*/
+}
+
+.app-img-font {
+    padding-right: 10%;
 }

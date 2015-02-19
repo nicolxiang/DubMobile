@@ -6975,7 +6975,7 @@ __WLClient = function() {
 		isInitialized = true;
 
 		//add onpause event - flushing the content of events buffer to the server before going ot background
-		if (WL.EnvProfile.isEnabled(WL.EPField.USES_CORDOVA)) {
+		if (WL.EnvProfile.isEnabled(WL.EPField.USES_CORDOVA) && WL.Client.getEnvironment() != WL.Environment.BLACKBERRY10) {
 			document.addEventListener("pause", WL.Client.flushBufferFromAsync, false);
 			
 			// stop heart beat on pause
@@ -15227,7 +15227,7 @@ WL.Device.extendedGeolocation = new __ExtendedGeolocation();
  * ================================================================= 
  */
 
-﻿﻿﻿﻿﻿/**
+/**
  * @license
  * Licensed Materials - Property of IBM
  * 5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.

@@ -6975,7 +6975,7 @@ __WLClient = function() {
 		isInitialized = true;
 
 		//add onpause event - flushing the content of events buffer to the server before going ot background
-		if (WL.EnvProfile.isEnabled(WL.EPField.USES_CORDOVA)) {
+		if (WL.EnvProfile.isEnabled(WL.EPField.USES_CORDOVA) && WL.Client.getEnvironment() != WL.Environment.BLACKBERRY10) {
 			document.addEventListener("pause", WL.Client.flushBufferFromAsync, false);
 			
 			// stop heart beat on pause

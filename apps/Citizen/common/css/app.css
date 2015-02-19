@@ -11,7 +11,31 @@ body styles
 body {
     font-family: 'TradeGothicLT', Arial, sans-serif, Helvetica;
 }
-
+@media only screen and (min-width: 385px){
+    html {
+        font-size: 12px !important;
+    }
+}
+@media only screen and (min-width: 449px){
+    html {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (min-width: 513px){
+    html {
+        font-size: 16px !important;
+    }
+}
+@media only screen and (min-width: 577px){
+    html {
+        font-size: 18px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 20px !important;
+    }
+}
 @font-face {
     font-family: 'TradeGothicLT';
     src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');

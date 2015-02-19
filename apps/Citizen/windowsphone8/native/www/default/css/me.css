@@ -1,6 +1,5 @@
 ﻿
 /* Stylesheet content from css/me.css in folder common */
-
 .navbar {
     background: #7BB76F;
 }
@@ -22,6 +21,8 @@
     margin-top: 65px;
     background: #fff !important;
     margin-bottom: 100px;
+    font-family: Helvetica !important;
+    font-weight: 700;
 }
 
     .div-me .text-left {
@@ -37,11 +38,11 @@
     }
 
     .div-me .title {
-        height: 96px;
         border-bottom: solid 1px #000;
-        padding-left: 32px;
-        padding-top: 32px;
-        padding-right: 32px;
+        padding-left: 1.5rem;
+        padding-top: 0.9rem;
+        padding-bottom:0.9rem;
+        padding-right: 1.5rem;
     }
 
     .div-me table {
@@ -49,26 +50,26 @@
     }
 
         .div-me table td {
-            width: 50%;
+            width: 60%;
         }
 
     .div-me .title .display {
-        font-size: 18px;
+        font-size: 1.5rem;
         text-align: left;
     }
 
     .div-me .title .collape {
-        font-size: 24px;
+        font-size: 22px;
         text-align: right;
         padding-top: 0px;
     }
 
     .div-me .toolbar {
-        height: 84px;
         border-bottom: solid 1px #ccc;
-        padding-left: 32px;
-        padding-top: 32px;
-        padding-right: 32px;
+        padding-left: 1.5rem;
+        padding-top: 0.8rem;
+        padding-bottom:0.8rem;
+        padding-right: 1.5rem;
         font-size: 24px;
     }
 
@@ -83,25 +84,32 @@
 
         .div-me .list .header {
             background: #0BD4EC;
-            height: 50px;
             padding-left: 15px;
-            padding-top: 15px;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
             font-size: 15px;
+            font-weight: 700;
         }
 
         .div-me .list .item {
-            height: 100px;
-            padding-top: 20px;
-            padding-left: 20px;
+            padding-top:0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
             border-bottom: solid 1px #ccc;
         }
 
             .div-me .list .item .item-title {
                 color: #699C5F;
+                font-size: 1.4rem;
             }
+
+.div-me .list .item .item-title-bottom {
+    font-size: 1.4rem;
+}
 
             .div-me .list .item .action {
                 color: #7BB76F;
+                font-size: 0.9rem;
             }
 
                 .div-me .list .item .action i {
@@ -112,3 +120,22 @@
                 .div-me .list .item .action td {
                     padding-right: 20px;
                 }
+
+.app-img {
+    height: 60%;
+    padding-right: 10%;
+}
+
+.app-img-font {
+    padding-right: 10%;
+}
+
+.app-img-font-file {
+    padding-right: 10%;
+    color: red;
+}
+
+.app-img-nav {
+    height: 60%;
+    padding-right: 3%;
+}

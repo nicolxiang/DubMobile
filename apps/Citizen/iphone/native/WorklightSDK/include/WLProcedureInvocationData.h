@@ -31,7 +31,15 @@
 	BOOL compressResponse;
 }
 
-// Sets the procedure parameters
+/** Sets the procedure parameters
+* <p>
+* Example: 
+* <code>
+* WLProcedureInvocationData  *data = [WLProcedureInvocationData ......];
+* NSArray *myParams = [NSArray arrayWithObjects:param1, param2, param3, nil];
+* [data setParameters:myParams];
+* </code>
+*/
 // The Array should contain Objects that can be parsed via JSON. NSString and NSNumber work best.
 // For Boolean values, use [NSNumber numberWithBool:]
 @property (nonatomic, strong) NSArray *parameters;

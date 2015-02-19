@@ -13,7 +13,31 @@ body styles
 body {
     font-family: 'TradeGothicLT', Arial, sans-serif, Helvetica;
 }
-
+@media only screen and (min-width: 385px){
+    html {
+        font-size: 12px !important;
+    }
+}
+@media only screen and (min-width: 449px){
+    html {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (min-width: 513px){
+    html {
+        font-size: 16px !important;
+    }
+}
+@media only screen and (min-width: 577px){
+    html {
+        font-size: 18px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 20px !important;
+    }
+}
 @font-face {
     font-family: 'TradeGothicLT';
     src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');
@@ -49,7 +73,6 @@ header/bottom nav bar
 }
 
 .navbar-absolute-bottom {
-    height: 83px;
 
 }
 
@@ -60,7 +83,7 @@ header/bottom nav bar
     display: block;
     float: left!important;
     font-weight: 300;
-    height: 83px;
+    height: 6rem;
     letter-spacing: 0.02em;
     line-height: 20px;
     overflow: hidden;
@@ -87,10 +110,10 @@ header/bottom nav bar
 
 .navbar-absolute-bottom .btn-navbar {
     color: white;
-    font-size: 18px;
+    font-size:1.3rem;
     font-weight: 400;
     height: 100%;
-    line-height: 16px;
+    line-height: 1.3rem;
     overflow: hidden;
     position: absolute;
     text-overflow: ellipsis;
@@ -99,17 +122,20 @@ header/bottom nav bar
     text-decoration: none;
     text-align: center;
     padding: 0;
+    text-transform:capitalize !important;
 }
 
 .navbar-absolute-bottom .btn-navbar i {
     font-size: 30px;
     margin-top: 15px;
     display: inline-block;
+    width: 2rem;
+    height: 2rem;
 }
 
 .navbar-absolute-bottom .btn-navbar .status {
     background-color: transparent;
-    font-size: 16px;
+    font-size: 1.3rem;
     min-height: 22px;
     position: absolute;
     width: 100%;
@@ -302,7 +328,9 @@ custom sidebar styles
 */
 .sidebar-left, .sidebar-right {
     /*background: #e84343;*/
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .list-group-item.active, .list-group-item.active:focus {
@@ -312,16 +340,18 @@ custom sidebar styles
 
 .sidebar-right a.list-group-item {
     background: none;
-    color: #fff;
+    color: #fff !important;
     text-align: right;
 }
 
 .sidebar-right .list-group-item, .sidebar-right a.list-group-item {
-    border-bottom: 1px solid #de7c62;
+    border-bottom: 1px solid #000;
 }
 
 .sidebar-right .list-group-item i {
-    margin-left: 10px;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 15px;
 }
 
 /*------------------------------------------------------------------
@@ -407,9 +437,10 @@ custom icon styles
 */
 .ico-book {
     background: url("../images/icons/ico-book.png") no-repeat;
+    background-size: 100%;
     display: inline-block;
-    width: 27px;
-    height: 29px;
+    width: 50px;
+    height: 50px;
 }
 
 .ico-about-dm{
@@ -420,7 +451,7 @@ custom icon styles
 	background-repeat: no-repeat;
 	background-position: top;
 	position: relative;
-	top: 0px;
+	top: 5px;
 }
 
 .ico-dm-apps{
@@ -497,7 +528,7 @@ custom icon styles
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	top: 3px;
+	top: 5px;
 }
 
 .ico-open-book{
@@ -508,7 +539,18 @@ custom icon styles
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	top: 3px;
+	top: 5px;
+}
+
+.ico-search-black{
+    background-image: url(../images/icons/fa-search.png);
+    width:37px;
+    height: 41px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center bottom;
+    position:relative;
+    top: 5px;
 }
 
 .ico-dashboard-black{
@@ -519,7 +561,7 @@ custom icon styles
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
-	top: 0px;
+	top: 5px;
 }
 
 .ico-heart-black{
@@ -561,7 +603,7 @@ custom icon styles
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
-	top: 0px;
+	top: 5px;
 }
 .ico-light-black{
 	background-image: url(../images/icons/light-black.png);
@@ -581,7 +623,7 @@ custom icon styles
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
-	top: 0px;
+	top: 5px;
 }
 .ico-contact-us-black{
 	background-image: url(../images/icons/contact-us-black.png);
@@ -591,13 +633,13 @@ custom icon styles
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
-	top: 0px;
+	top: 5px;
 }
 
 .ico-my-cart{
 	background-image: url(../images/icons/my-cart.png);
-	width: 36px;
-	height: 36px;
+	width:50px;
+	height: 50px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position:center center;
@@ -607,8 +649,8 @@ custom icon styles
 
 .ico-my-schedule{
 	background-image: url(../images/icons/my-schedule.png);
-	width: 36px;
-	height: 36px;
+	width: 50px;
+	height: 50px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position:center center;
@@ -618,8 +660,8 @@ custom icon styles
 
 .ico-more-blue{
 	background-image: url(../images/icons/more.png);
-	width: 36px;
-	height: 36px;
+	width: 50px;
+	height: 50px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position:center center;

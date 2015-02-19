@@ -4,7 +4,7 @@
 
 
 .view-wrapper{
-	margin-top:28px;
+	margin-top:65px;
 	background:#fff;
 }
 
@@ -33,6 +33,10 @@
 	margin: 0;
 }
 
+.nopadding {
+	padding: 0;
+}
+
 .searchdivleft {
 	width: 95%;
 }
@@ -56,6 +60,7 @@
 	width: 100%;
 }
 
+
 .sizepercent100 {
 	height:expression(this.width);
 	width: 100%;
@@ -66,8 +71,16 @@
 	height: 151px;
 	font-weight: 700;
 	font-size: 30px;
-	padding-top: 40px;
+	padding-top: 20px;
 	text-align: center;
+    padding-bottom:56px;
+}
+
+.seeshare img{
+	vertical-align:middle;
+    margin-right:7px;
+    width:71px;
+    height:71px;
 }
 
 .seehead {
@@ -77,8 +90,8 @@
 	text-align: center;
 	color: #FFF;
 	font-weight: 700;
-	font-size:1em;
-    font-family:Helvetica;
+	font-size: 15px;
+    font-family:'TradeGothic';
 	margin: 0;
 }
 
@@ -90,11 +103,18 @@ vertical-align:middle;
 .seeloadmore {
 	text-align: center;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 14px;
 	margin-top:-29px;
 	color: #000;
 	background-color:#FFF;
     font-family:Helvetica;
+}
+
+
+.spanloadmore{
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 18px;
 }
 
 
@@ -125,30 +145,35 @@ vertical-align:middle;
   padding: 15px;
   padding-left:35px;
   padding-right:35px;
+  padding-bottom:30px;
   color:#000;
   background: #ffffff;
 }
 
 
 .div-caption-title{
-	margin-top:-40px;
+	margin-top:-36px;
 	background: #ffffff;
 	padding:6px;
 }
 
 .caption-title{
-	font-weight: 800;
+	font-weight:bold;
 	font-size: 20px;
+    font-family:'TradeGothic';
 }
 
 .caption-date{
-	font-weight: 800;
+	font-weight:bold;
 	font-size: 18px;
 	padding-bottom:4px;
+    font-family:'Helvetica';
 }
 
 .caption-content{
 	font-size: 16px;
+    padding-bottom:54px;
+    font-family:'Helvetica';
 }
 
 .paddingbottom19{
@@ -171,12 +196,15 @@ vertical-align:middle;
 	position:absolute;
 	height:100%;
 	width: 50%;
-	padding-top: 27px; 
-	padding-left: 24px; 
+	padding:10px; 
+    min-width:148px;
 	font-size: 15px;
-	font-weight:700;
+	font-weight:bold;
 	overflow:hidden;
-	font-family:Helvetica;
+	font-family:'TradeGothic';
 }
 
+span.fa-lg {
+    font-size: 1.225em;
+}
 
