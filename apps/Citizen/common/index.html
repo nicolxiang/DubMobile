@@ -50,18 +50,35 @@
          ng-swipe-left='Ui.turnOff("uiSidebarLeft")'>
 
         <!-- Navbars -->
-        <div class="navbar navbar-app navbar-absolute-top" ng-style="style">
+        <!--<div class="navbar navbar-app navbar-absolute-top" ng-style="style">-->
+            <!--<div class="navbar-brand navbar-brand-center" ui-yield-to="title">-->
+                <!--iDubai-->
+            <!--</div>-->
+            <!--<div class="btn-group pull-left">-->
+                <!--<div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle notify-row">-->
+                    <!--<i class="fa fa-bell-o"></i>-->
+                    <!--<span class="badge badge-default">7</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="btn-group pull-right" ui-yield-to="navbarAction" >-->
+                <!--<div ui-toggle="uiSidebarRight" class="btn">-->
+                    <!--<i class="fa fa-bars"></i>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="navbar navbar-app navbar-absolute-top" ng-style="style" style="display: table">
             <div class="navbar-brand navbar-brand-center" ui-yield-to="title">
                 iDubai
             </div>
-            <div class="btn-group pull-left">
-                <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle notify-row">
+            <div class="btn-group" style="vertical-align: middle;display: table-cell;text-align: left;">
+                <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle notify-row" >
                     <i class="fa fa-bell-o"></i>
-                    <span class="badge badge-default">7</span>
+                    <span class="badge badge-default" >7</span>
                 </div>
             </div>
-            <div class="btn-group pull-right" ui-yield-to="navbarAction">
-                <div ui-toggle="uiSidebarRight" class="btn">
+            <div class="btn-group" ui-yield-to="navbarAction"  style="vertical-align: middle;display: table-cell;text-align: right;float: none">
+                <div ui-toggle="uiSidebarRight" class="btn" style="float: none">
                     <i class="fa fa-bars"></i>
                 </div>
             </div>
