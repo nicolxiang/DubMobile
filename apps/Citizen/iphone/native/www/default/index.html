@@ -91,6 +91,10 @@
         <!-- ~ .app -->
         <div ui-yield-to="modals"></div>
         <script>
+    	$(document).ready(function () {
+            var fontsize=$(document).width()/640*40;
+            $('html').css('font-size',fontsize+'px');
+        });
     </script>
     </body>
 </html>
