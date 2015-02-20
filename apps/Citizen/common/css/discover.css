@@ -180,7 +180,7 @@
             background-image: url('../images/discover/dm_home_discover_23.png');
             background-repeat: no-repeat;
             background-position: 70% 40%;
-            /*background-size: 50%;*/
+            background-size: 40%;
         }
 
         .discover-content .WedtherBody .temperature {
@@ -221,7 +221,7 @@
                 }
 
             .discover-content .WedtherBody .temperatureDiv .img {
-                /*width: 50%;*/
+                max-width: 50%;
             }
 
             .discover-content .WedtherBody .temperatureDiv span.fontSize {
@@ -285,15 +285,18 @@
                         /*width: 25%;
                         position: relative;*/
                         margin-top: -6px;
-                        max-height: 42px;
+                        max-height: 40px;
                     }
 
                     .discover-content .WedtherBody .emergencyItemTabel td span img {
-                        max-width: 40px;
+                        max-width: 39px;
                     }
 
                     .emergencyItemTabel tr td span:first-child {
                         margin-top: 8px;
                         margin-bottom: 4px;
                        
+                    }
+                    .Image311 {
+                        margin-top: 5px;
                     }
