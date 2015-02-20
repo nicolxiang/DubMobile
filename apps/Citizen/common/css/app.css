@@ -11,31 +11,6 @@ body styles
 body {
     font-family: 'TradeGothicLT', Arial, sans-serif, Helvetica;
 }
-@media only screen and (min-width: 385px){
-    html {
-        font-size: 12px !important;
-    }
-}
-@media only screen and (min-width: 449px){
-    html {
-        font-size: 14px !important;
-    }
-}
-@media only screen and (min-width: 513px){
-    html {
-        font-size: 16px !important;
-    }
-}
-@media only screen and (min-width: 577px){
-    html {
-        font-size: 18px !important;
-    }
-}
-@media only screen and (min-width: 641px){
-    html {
-        font-size: 20px !important;
-    }
-}
 @font-face {
     font-family: 'TradeGothicLT';
     src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');
@@ -71,7 +46,7 @@ header/bottom nav bar
 }
 
 .navbar-absolute-bottom {
-
+    height: 3.2rem;
 }
 
 
@@ -81,7 +56,7 @@ header/bottom nav bar
     display: block;
     float: left!important;
     font-weight: 300;
-    height: 6rem;
+    height: 3.2rem;
     letter-spacing: 0.02em;
     line-height: 20px;
     overflow: hidden;
@@ -127,13 +102,13 @@ header/bottom nav bar
     font-size: 30px;
     margin-top: 15px;
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width:1.25rem;
+    height: 1.25rem;
 }
 
 .navbar-absolute-bottom .btn-navbar .status {
     background-color: transparent;
-    font-size: 1.3rem;
+    font-size: 0.65rem;
     min-height: 22px;
     position: absolute;
     width: 100%;
@@ -327,7 +302,7 @@ custom sidebar styles
 .sidebar-left, .sidebar-right {
     /*background: #e84343;*/
     font-family: Helvetica;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
@@ -347,8 +322,8 @@ custom sidebar styles
 }
 
 .sidebar-right .list-group-item i {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.25rem;
+    height: 1.25rem;
     margin-left: 15px;
 }
 

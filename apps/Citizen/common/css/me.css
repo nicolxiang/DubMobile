@@ -19,8 +19,9 @@
     margin-top: 65px;
     background: #fff !important;
     margin-bottom: 100px;
-    font-family: Helvetica !important;
+    font-family:Helvetica !important;
     font-weight: 700;
+    line-height: normal;
 }
 
     .div-me .text-left {
@@ -37,10 +38,10 @@
 
     .div-me .title {
         border-bottom: solid 1px #000;
-        padding-left: 1.5rem;
-        padding-top: 0.9rem;
-        padding-bottom:0.9rem;
-        padding-right: 1.5rem;
+        padding-left: 0.65rem;
+        padding-top: 0.65rem;
+        padding-bottom:0.65rem;
+        padding-right: 0.375rem;
     }
 
     .div-me table {
@@ -52,23 +53,21 @@
         }
 
     .div-me .title .display {
-        font-size: 1.5rem;
+        font-size: 0.75rem;
         text-align: left;
     }
 
     .div-me .title .collape {
-        font-size: 22px;
         text-align: right;
         padding-top: 0px;
     }
 
     .div-me .toolbar {
         border-bottom: solid 1px #ccc;
-        padding-left: 1.5rem;
-        padding-top: 0.8rem;
-        padding-bottom:0.8rem;
-        padding-right: 1.5rem;
-        font-size: 24px;
+        padding-left: 0.65rem;
+        padding-top: 0.65rem;
+        padding-bottom:0.65rem;
+        padding-right: 0.375rem;
     }
 
     .div-me .list {
@@ -82,33 +81,48 @@
 
         .div-me .list .header {
             background: #0BD4EC;
-            padding-left: 15px;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            font-size: 15px;
+            padding-left: 0.4rem;
+            padding-top: 0.266rem;
+            padding-bottom: 0.266rem;
+            font-size: 0.65rem;
             font-weight: 700;
         }
 
         .div-me .list .item {
-            padding-top:0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 1rem;
+            padding-top:0.25rem;
+            padding-bottom: 0.25rem;
+            padding-left: 0.6rem;
             border-bottom: solid 1px #ccc;
+            height: 3.275rem;
+            display: table;
         }
 
             .div-me .list .item .item-title {
                 color: #699C5F;
-                font-size: 1.4rem;
+                font-size: 0.7rem;
             }
 
 .div-me .list .item .item-title-bottom {
-    font-size: 1.4rem;
+    font-size: 0.7rem;
 }
 
             .div-me .list .item .action {
                 color: #7BB76F;
-                font-size: 0.9rem;
+                font-size: 0.45rem;
             }
+
+.div-me .list .item .item-left {
+    float: left;
+    width:11.5rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+.div-me .list .item .item-right {
+    width:3.9rem;
+   float: right;
+    text-align: center;
+padding-top:0.5rem;
+}
 
                 .div-me .list .item .action i {
                     font-size: 24px;
@@ -119,13 +133,25 @@
                     padding-right: 20px;
                 }
 
-.app-img {
-    height: 60%;
-    padding-right: 10%;
+.app-img-0 {
+     height: 1.125rem;
+ }
+.app-img-1 {
+      height: 0.875rem;
+  }
+.app-img-2 {
+    height: 0.95rem;
+}
+.app-img-3 {
+    height: 0.875rem;
+}
+
+.app-img-4 {
+    height: 0.85rem;
 }
 
 .app-img-font {
-    padding-right: 10%;
+    padding-top: 0.25rem;
 }
 
 .app-img-font-file {
@@ -133,7 +159,14 @@
     color: red;
 }
 
+
+
 .app-img-nav {
-    height: 60%;
+    height: 0.925rem;
+    padding-right: 3%;
+}
+
+.app-img-nav-allow {
+    height: 0.675rem;
     padding-right: 3%;
 }
