@@ -14,7 +14,7 @@
 		<div class="list-group nomargin">
 			<div class="btn-group justified" ng-controller="SeeController" style="height:150px;">
 			  <carousel interval="myInterval" classbuttonbg="colorblue" classarrow="colorwhite"> 
-                <slide ng-repeat="slide in slides" active="slide.active">
+                <slide ng-repeat="slide in slides" active="slide.active" ng-click="gotoDetail(slide);">
                          <img
 						ng-src="{{slide.image}}">
 					<div class="carousel-caption textaligncenter">

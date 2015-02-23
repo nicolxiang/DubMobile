@@ -50,19 +50,20 @@ citizenApp.controller('MainController',
 			$rootScope.path = $location.path().replace('/', '');
 
 			$rootScope.$on('$routeChangeStart', function() {
-				$rootScope.loading = true;
+				//$rootScope.loading = true;
+                $scope.hasBack=false;
 			});
 
 			$rootScope.$on('$routeChangeSuccess', function() {
-				$rootScope.loading = false;
+				//$rootScope.loading = false;
+                if( $location.path()=='/event-detail'){
+                    $scope.hasBack=true;
+                }
 			});
-			
-			
-			
-
-
-			
-
+            
+            $scope.goBack= function () {
+                window.history.go(-1);
+            }
 		});
 
 

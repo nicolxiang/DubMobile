@@ -49,6 +49,12 @@ header/bottom nav bar
     height: 3.2rem;
 }
 
+.navbar .back{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+    padding-left:10px
+}
 
 .navbar-absolute-bottom .nav-block-title {
     color: white;
@@ -722,7 +728,7 @@ color: black !important; /* Internet Explorer 10+ */
 
 
 .carousel-inner > .item {
-  -webkit-transition: 0.3s left !important;
+  -webkit-transition:  0.3s left !important;
   -o-transition: 0.3s left !important;
   transition: 0.3s left !important;
 }
@@ -732,5 +738,30 @@ color: black !important; /* Internet Explorer 10+ */
 }
 .clear{
 	clear:both;
+}
+
+
+/* animation */
+.fade{
+    opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
 }
 

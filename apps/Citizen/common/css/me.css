@@ -95,6 +95,7 @@
             border-bottom: solid 1px #ccc;
             height: 3.275rem;
             display: table;
+            width: 100%;
         }
 
             .div-me .list .item .item-title {
@@ -113,10 +114,11 @@
 
 .div-me .list .item .item-left {
     float: left;
-    width:11.3rem;
     display: table-cell;
     vertical-align: middle;
     padding-right: 15px;
+    width:calc(100% - 5rem);
+    width:-webkit-calc(100% - 4.2rem);
 }
 .div-me .list .item .item-right {
     width:3.9rem;

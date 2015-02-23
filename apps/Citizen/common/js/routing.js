@@ -66,5 +66,8 @@ citizenApp.config(['$routeProvider',
 		    }).when('/paySuccess', {
 		        templateUrl: 'views/PaymentSuccessed.html',
 		        reloadOnSearch: false
-		    });
+		    }).when('/event-detail',{
+                    templateUrl:'views/event-detail.html',
+                    reloadOnSearch:false
+                });
 		}]);
