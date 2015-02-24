@@ -1,0 +1,49 @@
+﻿<link href="css/service1.css" rel="stylesheet">
+
+<div class="scrollable" ng-controller="Service1Controller">
+	<div class="scrollable-content view-wrapper">
+		<div>
+			<div class="s-dropdown">
+				<div class="text">
+					<span id="">{{selectedPestType}}</span>
+					<div class="btn-group pull-right">
+						<a ui-turn-on='myDropdown' class='btn'>
+							<i class="fa ico-arrow-down pull-right"></i>
+						</a>
+						<ul class="dropdown-menu" ui-outer-click="Ui.turnOff('myDropdown')" ui-outer-click-if="Ui.active('myDropdown')" role="menu" ui-show="myDropdown" ui-state="myDropdown" ui-turn-off="myDropdown">
+
+							<li>
+								<a ng-click="selectPestType('Termites')">Termites</a>
+							</li>
+							<li>
+								<a ng-click="selectPestType('Rodents')">Rodents</a>
+							</li>
+							<li>
+								<a ng-click="selectPestType('Cockroaches')">Cockroaches</a>								
+							</li>
+							<li>
+								<a ng-click="selectPestType('Other')">Other</a>								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="s-line"></div>
+			<div class="s-img">
+				<img src="images/food_deom1.png" class="" image-round />
+				<img src="images/icons/camera.png" class="s-camera" />
+			</div>
+			<div class="s-descrption"> Description: </div>
+			<div>
+				<textarea class="s-desc"></textarea>
+			</div>
+			<div class="s-map">			
+				<img src="images/map-pin.png" />
+				<button class="btn btn-current">Current Location</button>
+			</div>
+			<div class="s-submit">
+				<a class="btn form-control btn-submit" href="#/paymentFailed">Submit</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -115,9 +115,10 @@
 
 .div-me .list .item .item-left {
     float: left;
-    width:11.5rem;
+    width:11.3rem;
     display: table-cell;
     vertical-align: middle;
+    padding-right: 15px;
 }
 .div-me .list .item .item-right {
     width:3.9rem;
@@ -157,7 +158,7 @@ padding-top:0.5rem;
 }
 
 .app-img-font-file {
-    padding-right: 10%;
+    padding-top: 0.25rem;
     color: red;
 }
 

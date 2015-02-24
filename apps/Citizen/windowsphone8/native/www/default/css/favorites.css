@@ -1,0 +1,20 @@
+﻿
+/* Stylesheet content from css/favorites.css in folder common */
+.navbar{
+	background: #e84343;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #e84343;
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}
+.view-wrapper{
+	margin-top:65px;
+	background:#fff;
+	min-height: -webkit-calc(100% - 65px);
+	min-height: -moz-calc(100% - 65px);
+	min-height: calc(100% - 65px);
+}

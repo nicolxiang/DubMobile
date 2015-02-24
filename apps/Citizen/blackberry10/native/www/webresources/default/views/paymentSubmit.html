@@ -1,0 +1,111 @@
+<link href="css/payment.css" rel="stylesheet">
+<style type="text/css">
+#aa,#bb{
+	width:20px;
+	height:20px;
+}
+.pnpBody{
+	font-family: Helvetica;
+	background-color:white;
+	height: 100%;
+}
+.pnpBody .btn-pay-group button {
+		border: none;
+		text-align: left;
+		padding-left: 15%;
+		color: white;
+		font-size: 14px;
+		height:38px;
+	}
+.p-allow-down{
+    margin-top: 10px;
+    margin-right:10px;
+}
+    .fee-item{
+        padding-left:10px !important;
+    }
+    .p-radio{
+        width: 100%;
+    }
+.p-radio span{
+    font-weight: 600;
+    color:#000;
+    padding-left:10px;
+}
+.p-radio-unchecked{
+        background-image: url(../images/icons/unchecked.png);
+    background-size: 100%;
+        width:36px;height: 36px;
+        margin-top: 10px;
+        float: left;
+        display: block;
+    }
+.p-radio-checked{
+    background-image: url(../images/icons/checked.png);
+    width:36px;height: 36px;
+    background-size: 100%;
+    margin-top: 10px;
+    float: left;
+    display: block;
+}
+    .p-radio-text{
+        float:right;
+    }
+    .p-submit{
+        padding:10px !important;
+    }
+    .p-fee-item{
+        background: #f5fafa;
+    }
+.p-submit .btn-submit{
+    background: #ff8f71;
+    color: #fff;
+    border-color:#ff8f71 ;
+    text-align: right;
+    font-weight: 600;
+}
+</style>
+<div class="pnpBody">
+<div class="scrollable">
+	<div class="scrollable-content view-wrapper">
+		<div>
+			<div class="section-header">Name on card</div>
+			<div class="fee">
+				<div class="fee-item">
+					Credit Card<i class="fa ico-arrow-down pull-right p-allow-down"></i>
+				</div>
+				<div class="fee-item p-fee-item">
+					<span class="label">Credit Card Number</span>
+				</div>
+				<div class="fee-item p-fee-item">
+					<span class="label">Expiry Date</span> 
+				</div>
+				<div class="fee-item p-fee-item">
+					<span class="label">Security Code</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="">
+			<div class="credit-card-item">
+                <table class="p-radio">
+                    <tr>
+                        <td><span class="p-radio-span"><i class="p-radio-unchecked"></i><span>Save Card</span></span></td>
+                        <td><span class="p-radio-span"><i class="p-radio-checked"></i><span>Default</span></span></td>
+                    </tr>
+                </table>
+			</div>
+		</div>
+		<div class="p-submit">
+			<a href="#/paymentSuccessed" class="btn-submit form-control">Submit</a>
+		</div>
+	</div>
+</div>
+</div>
+<script type="javascript">
+    $(".p-radio-span").on("click", function () {
+        $(".p-radio-span i").addClass("p-radio-unchecked");
+        $(this).find("i:first").removeClass("p-radio-checked").addClass("p-radio-checked");
+    });
+</script>

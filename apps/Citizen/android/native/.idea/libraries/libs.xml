@@ -12,7 +12,6 @@
       <root url="jar://$PROJECT_DIR$/libs/bcprov.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/cordova_plugins.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/android-async-http.jar!/" />
-      <root url="jar://$PROJECT_DIR$/libs/sqlcipher.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

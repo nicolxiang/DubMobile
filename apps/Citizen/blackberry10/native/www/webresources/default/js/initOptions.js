@@ -25,8 +25,8 @@
 };
 
 if (window.addEventListener) {
-	window.addEventListener('load', function() { WL.Client.init(wlInitOptions); }, false);
+	window.addEventListener('load', function() { WL.Client.init(wlInitOptions); WL.App.hideSplashScreen();}, false);
 } else if (window.attachEvent) {
-	window.attachEvent('onload',  function() { WL.Client.init(wlInitOptions); });
+	window.attachEvent('onload',  function() { WL.Client.init(wlInitOptions);WL.App.hideSplashScreen(); });
 }
 

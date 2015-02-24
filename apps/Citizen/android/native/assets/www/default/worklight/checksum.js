@@ -1,2 +1,2 @@
-var WL_CHECKSUM = {"checksum":753715221,"date":1424344357960,"machine":"asus-PC"};
-/* Date: Thu Feb 19 19:12:37 CST 2015 */
+var WL_CHECKSUM = {"date":1424678242605,"machine":"lucas-chen","checksum":721807597};
+/* Date: Mon Feb 23 15:57:22 CST 2015 */

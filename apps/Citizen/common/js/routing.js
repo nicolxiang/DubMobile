@@ -59,6 +59,12 @@ citizenApp.config(['$routeProvider',
 		    }).when('/services/service1', {
 		        templateUrl: 'views/service1.html',
 		        reloadOnSearch: false
+		    }).when('/event', {
+		        templateUrl: 'views/event.html',
+		        reloadOnSearch: false
+		    }).when('/article', {
+		        templateUrl: 'views/article.html',
+		        reloadOnSearch: false
 		    })
 		    .otherwise({
 		        redirectTo: '/',

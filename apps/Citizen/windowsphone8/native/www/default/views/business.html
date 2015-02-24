@@ -31,32 +31,40 @@
 				<i class="icon-news"></i> Business News
 			</div>
 			<div>
-				<table class="business-table">
-					<tr>
-						<td ><img src="images/business-1.png" class="width-100"> </td>
-						<td class="td-text">Hundreds of Dubai food transport vehicles fined in inspection drive.
-							<div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div>
-						</td>
-					</tr>
+                <table class="business-table" id="ArticleContent">
+                    <tr>
+                        <td><img src="images/business-1.png" class="width-100"> </td>
+                        <td class="td-text">
+                            Hundreds of Dubai food transport vehicles fined in inspection drive.
+                            <div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-text">
+                            Dubai Sets New Standard for Exporters of Food.
+                            <div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div>
+                        </td>
+                        <td><img src="images/business-2.png" class="width-100"> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/business-3.png" class="width-100"> </td>
+                        <td class="td-text">
+                            India Tops The List of Dubai's Food Import Partners.
+                            <div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div>
+                        </td>
+                    </tr>
 
-					<tr>
-						<td class="td-text">Dubai Sets New Standard for Exporters of Food.
-							<div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
-						<td><img src="images/business-2.png" class="width-100"> </td>
-					</tr>
-
-					<tr>
-						<td><img src="images/business-3.png" class="width-100"> </td>
-						<td class="td-text">India Tops The List of Dubai's Food Import Partners.
-							<div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
-					</tr>
-					<tr>
-						<td colspan="2" class="text-align"><i class="icon-more"></i> </td>
-					</tr>
-					<tr>
-						<td colspan="2" class="text-align font-18 padding-bottom-5">Load More</td>
-					</tr>
-				</table>
+                </table>
+                
+			    <table class="business-table">
+			        
+                    <tr>
+                        <td colspan="2" class="text-align"><i class="icon-more" onclick="GetMoreArticle('ArticleContent');"></i> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-align font-18 padding-bottom-5">Load More</td>
+                    </tr>
+			    </table>
 			</div>
 
 			<div class="div-header">
@@ -80,32 +88,35 @@
 			</div>
 
 			<div>
-				<table class="business-table">
-					<tr>
-						<td><img src="images/business-4.png" class="width-100"> </td>
-						<td class="td-text">Food companies that made the Global 100 sustainability index.
-							<div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
-					</tr>
+			    <table class="business-table" id="BusinessNewsContent">
+			        <tr>
+			            <td><img src="images/business-4.png" class="width-100"> </td>
+			            <td class="td-text">Food companies that made the Global 100 sustainability index.
+			                <div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
+			        </tr>
 
-					<tr>
-						<td class="td-text">Popularity of organic food, is fast food on its way out.
-							<div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
-						<td><img src="images/business-5.png" class="width-100"> </td>
-					</tr>
+			        <tr>
+			            <td class="td-text">Popularity of organic food, is fast food on its way out.
+			                <div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
+			            <td><img src="images/business-5.png" class="width-100"> </td>
+			        </tr>
 
-					<tr>
-						<td><img src="images/business-6.png" class="width-100"> </td>
-						<td class="td-text">Drink purified water without the added sodium.
-							<div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
-					</tr>
-					<tr>
-						<td colspan="2" class="text-align"><i class="icon-more"></i> </td>
-					</tr>
-					<tr>
-						<td colspan="2" class="text-align font-18 padding-bottom-5">Load More</td>
-					</tr>
-				</table>
-			</div>
+			        <tr>
+			            <td><img src="images/business-6.png" class="width-100"> </td>
+			            <td class="td-text">Drink purified water without the added sodium.
+			                <div class="div-rectangle"><i class="icon-rectangle float-right"></i> </div></td>
+			        </tr>
+			    </table>
+
+			    <table class="business-table">
+                    <tr>
+                        <td colspan="2" class="text-align"><i class="icon-more" onclick="GetMoreArticle('BusinessNewsContent');"></i> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-align font-18 padding-bottom-5">Load More</td>
+                    </tr>
+                </table>
+            </div>
 			<div class="div-contain">
 				<img src="images/business-7.png" class="width-100">
 				<i class="icon-user2"></i> 
@@ -154,3 +165,16 @@
 		</div>  
 	</div>
 </div>
+<div id="Toggle"></div>
+<script type="text/javascript">
+    function GetMoreArticle(contentId) {
+           var c1 = $("#"+contentId+" tbody tr:eq(0)").html();
+           var c2 = $("#"+contentId+" tbody tr:eq(1)").html();
+            var len=$("#"+contentId+" tr").length;
+            if ((len / 3) % 2 > 0) {
+                $("#" + contentId).append("<tr>" + c2 + "</tr>").append("<tr>" + c1 + "</tr>").append("<tr>" + c2 + "</tr>");
+            } else {   
+                $("#" + contentId).append("<tr>" + c1 + "</tr>").append("<tr>" + c2 + "</tr>").append("<tr>" + c1 + "</tr>");
+            }
+        }
+</script>

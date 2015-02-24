@@ -1,0 +1,134 @@
+﻿
+/* Stylesheet content from css/payment.css in folder common */
+.navbar{
+	background: #e84343;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #e84343;
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}
+.view-wrapper{	
+	background:#fff;
+	min-height: -webkit-calc(100%);
+	min-height: -moz-calc(100%);
+	min-height: calc(100%);
+}
+
+.section-header{
+	height: 65px;
+	line-height: 65px;
+	text-align: left;
+	font-size: 18px;
+	color: #999999;
+	padding-left: 15px;
+	border-bottom: 1px solid #000;	
+}
+
+.fee{
+	
+}
+
+.fee-item{
+	padding-left: 45px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+	border-bottom: 1px solid #c7c7c7;	
+}
+
+.fee-item span.label{
+	width:120px;
+	color: #999999;
+}
+.fee-item span.label-selected{
+	width:120px;
+	color: #000000;
+}
+.credit-card-group{
+	border-bottom: 1px solid #999999;
+}
+.credit-card{
+	height: 65px;
+	line-height: 65px;
+	font-size: 18px;
+	color: #000000;
+	padding-left: 15px;
+}
+
+.credit-card-item{
+	padding-left: 15px;line-height: 65px;
+}
+
+.credit-card-item .num{
+	font-size:18px; 
+	color: #ff8f71;
+	padding-right: 15px;	
+}
+
+.credit-card-item .date{
+	padding-left:15px;
+	font-size:18px;
+	color: #ff8f71;
+}
+
+.use-other{
+	padding-left: 15px;
+	line-height: 65px;
+	border-bottom: 1px solid #999999;
+	font-size:18px;
+	height: 65px;"
+}
+
+.new-credit-card{
+	padding-left: 15px;
+	line-height: 65px;
+	border-bottom: 1px solid #999999;
+	font-size:18px;
+	height: 65px;
+}
+
+.btn-pay-group{
+	margin-top: 20px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.icon-arrow-right{
+	background-image: url(../images/icons/arrow-right.png);	
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 44px;
+	background-repeat: no-repeat;
+	background-position:center;
+	position:relative;
+	top:10px;
+}
+
+.btn-pay{	
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 90%;
+	border: none;	
+	color: #fff;
+	font-size: 18px;
+	background-color: #ff8f71;
+	border-radius:  5px;
+}
+
+.ico-unselected-empty{
+    background-image: url(../images/icons/unchecked.png);
+    width: 36px;
+    height: 36px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center center;
+    position:relative;
+    top: 0px;
+    margin-top: 10px;
+}
+

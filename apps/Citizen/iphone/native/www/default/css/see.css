@@ -160,7 +160,7 @@ vertical-align:middle;
 .caption-title{
 	font-weight:bold;
 	font-size: 20px;
-    font-family:'TradeGothic';
+    /*font-family:'TradeGothic';*/
 }
 
 .caption-date{
@@ -173,7 +173,7 @@ vertical-align:middle;
 .caption-content{
 	font-size: 16px;
     padding-bottom:54px;
-    font-family:'Helvetica';
+    font-family:'TradeGothic','Helvetica';
 }
 
 .paddingbottom19{
@@ -204,7 +204,7 @@ vertical-align:middle;
 	font-family:'TradeGothic';
 }
 
-span.fa-lg {
-    font-size: 1.225em;
+.seeshare span.fa-lg {
+    font-size: 0.9em;
 }
 

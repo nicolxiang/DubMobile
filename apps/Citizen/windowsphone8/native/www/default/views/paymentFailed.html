@@ -1,0 +1,52 @@
+﻿<link href="css/payment.css" rel="stylesheet">
+<div class="scrollable">
+    <div class="scrollable-content view-wrapper">
+        <div>
+            <div class="section-header">Cost Breakdown:</div>
+            <div class="fee">
+                <div class="fee-item">
+                    <span class="label">Serivce:</span>
+                    <span>1000.00 Dhs</span>
+                </div>
+                <div class="fee-item">
+                    <span class="label">Fee Item 1:</span><span>200.00 Dhs</span>
+                </div>
+                <div class="fee-item">
+                    <span class="label">Total</span> <span>1200.00 Dhs</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="section-header">
+            Payment Method
+        </div>
+        <div class="credit-card-group" ng-init="userOther=true" >
+            <div class="credit-card">Credit Card <i class="pull-right fa ico-arrow-down"></i> </div>
+            <div class="credit-card-item" ng-enabled="userOtherOpt1"  ng-click="userOther=!userOther">
+                <span class="num">4733-1234-4568-14747-152</span>
+                <span class="date">07/18</span>
+                <i class="pull-right ico-selected-blue"></i>
+            </div>
+            <div class="credit-card-item" name="userOtherOpt1" ng-hide="userOther" ng-click="userOther=!userOther" >
+                <span class="num">3573-8899-4568-14747-152</span>
+                <span class="date">05/18</span>
+                <i class="pull-right ico-unselected-empty"></i>
+            </div>
+            <div class="credit-card-item" name="userOtherOpt1" ng-hide="userOther" ng-click="userOther=!userOther" >
+                <span class="num">5322-2231-4568-14747-152</span>
+                <span class="date">09/18</span>
+                <i class="pull-right ico-unselected-empty"></i>
+            </div>
+        </div>
+        <div class="use-other" ng-model="userOther" ng-click="userOther=!userOther" ng-hide='!userOther'>
+            <span>User Other</span><i class="pull-right fa icon-arrow-right" ></i>
+        </div>
+        <div class="new-credit-card">
+            <a href="#/paymentNewCreateCard" style="color: #000"><span>New Credit Card</span><i class="pull-right fa icon-arrow-right"></i></a>
+        </div>
+
+        <div class="btn-pay-group">
+            <a href="#/paymentNotProcessed"><button class="btn-pay text-right">Pay</button></a>
+        </div>
+    </div>
+</div>

@@ -32,22 +32,27 @@
 		<script src="wlclient/js/webworks.js"></script><script src="worklight/cordova.js"></script>
 		<script src="worklight/wljq.js"></script>
 		<script src="worklight/worklight.js"></script>
-		<script src="angular/angular.js"></script>
+		<script src="jquery/jquery-1.11.1.min.js"></script>
+    <script src="angular/angular.js"></script>
     <script src="angular/angular-route.js"></script>
     <script src="angular/mobile-angular-ui.min.js"></script>
     <script src="angular/mobile-angular-ui.core.min.js"></script>
     <script src="angular/mobile-angular-ui.gestures.min.js"></script>
+    <script src="angular/carousel.js"></script>
     <!--<script src="js/initOptions.js"></script>-->
     <script src="js/app.js"></script>
     <script src="js/routing.js"></script>
     <script src="js/controllers/MainController.js"></script>
     <script src="js/controllers/ServicesController.js"></script>
-    <script src="angular/jquery.js"></script>
-    <script src="angular/bootstrap-transition.js"></script>
-    <script src="angular/bootstrap-carousel.js"></script>
+    <script src="js/controllers/SeeController.js"></script>
+    <script src="js/controllers/BusinessController.js"></script>
+	<script src="js/controllers/DiscoverController.js"></script>
+    <script src="js/controllers/service1controller.js"></script>
+    <script src="js/controllers/service2controller.js"></script>
+    <script src="js/directives/imageround.js"></script>
     <!--<script src="js/AccelaSDK.js"></script>-->
     <script>
-        //window.$ = window.jQuery = WLJQ;
+        window.$ = window.jQuery = WLJQ;
     </script>
     </head>
     <body ng-controller="MainController">
@@ -56,18 +61,34 @@
         <div class="sidebar sidebar-right" ng-include="'views/sidebar.html'"></div>
         <div class="app" ng-swipe-left="Ui.turnOff(&quot;uiSidebarLeft&quot;)" ng-swipe-right="Ui.turnOn(&quot;uiSidebarLeft&quot;)">
         <!-- Navbars -->
-            <div class="navbar navbar-app navbar-absolute-top" ng-style="style">
+        <!--<div class="navbar navbar-app navbar-absolute-top" ng-style="style">-->
+            <!--<div class="navbar-brand navbar-brand-center" ui-yield-to="title">-->
+                <!--iDubai-->
+            <!--</div>-->
+            <!--<div class="btn-group pull-left">-->
+                <!--<div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle notify-row">-->
+                    <!--<i class="fa fa-bell-o"></i>-->
+                    <!--<span class="badge badge-default">7</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="btn-group pull-right" ui-yield-to="navbarAction" >-->
+                <!--<div ui-toggle="uiSidebarRight" class="btn">-->
+                    <!--<i class="fa fa-bars"></i>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+            <div class="navbar navbar-app navbar-absolute-top" ng-style="style" style="display: table">
                 <div class="navbar-brand navbar-brand-center" ui-yield-to="title">
                 iDubai
             </div>
-                <div class="btn-group pull-left">
+                <div class="btn-group" style="vertical-align: middle;display: table-cell;text-align: left;">
                     <div class="btn sidebar-toggle notify-row" ui-toggle="uiSidebarLeft">
                         <i class="fa fa-bell-o"></i>
-                    <span class="badge badge-default">7</span>
+                    <span class="badge badge-default" style="position: relative;top: -7px;left: -13px;">7</span>
                     </div>
                 </div>
-                <div class="btn-group pull-right" ui-yield-to="navbarAction">
-                    <div class="btn" ui-toggle="uiSidebarRight">
+                <div class="btn-group" style="vertical-align: middle;display: table-cell;text-align: right;float: none" ui-yield-to="navbarAction">
+                    <div class="btn" style="float: none" ui-toggle="uiSidebarRight">
                         <i class="fa fa-bars"></i>
                     </div>
                 </div>
@@ -84,5 +105,11 @@
         </div>
         <!-- ~ .app -->
         <div ui-yield-to="modals"></div>
+        <script>
+    	$(document).ready(function () {
+            var fontsize=$(document).width()/640*40;
+            $('html').css('font-size',fontsize+'px');
+        });
+    </script>
     </body>
 </html>

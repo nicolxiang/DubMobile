@@ -1,48 +1,47 @@
-
 <link href="css/carousel.css" rel="stylesheet">
 <link href="css/see.css" rel="stylesheet">
 <link href="css/discover.css" rel="stylesheet">
 <div ng-include="'views/nav.html'"></div>
 <div class="scrollable">
-    <div class="scrollable-content">
+    <div class="scrollable-content view-wrapper">
         <!--content -->
-        <div class="discover-content bgColor-1" style="margin-top:28px;">
-            <div ng-include="'views/search.html'"></div>
-
+        <div class="discover-content bgColor-1">
             <div>
                 <div class="header">
                     <span><i class="fa fa-star-o fa-lg"></i></span>
-                    <span>Interesting Fact of the Day</span>
+                    <span>Interesting Fact of The Day</span>
                 </div>
                 <div class="zinc bgColor-2">Zinc is used abundantly in the body and is especially important to immunity and hormaone regulation</div>
             </div>
-
             <div>
                 <div class="header">
                     <span class="fa-stack fa-ng">
+
                         <i class="fa fa-circle fa-stack-2x"></i>
+
                         <i class="fa fa-flag fa-stack-1x fa-twitter" style="color:#ad4290"></i>
+
                     </span>
                     <span>HH Sheikh Mohammad</span>
                 </div>
-
-                <div class="headPortrait">
+                <div class="main">
                     <div class="body">
-                        <div class="quotationMarks fontColor-2"><i class="fa fa-quote-left"></i></div>
+                        <span class="quotationMarks fontColor-2"></span>
                         <div class="stormHuda fontColor-2">
-                            I invite all in the Arab and international media to focus on this tragedy and by doing so help the aiding of these refugees
-                            #Storm_Huda
-                            <i class="fa fa-quote-right quotationMarks quotationMarks_2"></i>
+                            I invite all in the Arab and international media to focus on this tragedy <br />and by doing so help the aiding of these refugees #Storm_Huda
+                            <span class="quotationMarks quotationMarks_2"></span>
                         </div>
-
-                        <div class="sheikhmohamm">
-                            <span>Follow Sheikh Mohammad</span>
-                            <span style="margin-left: 20px;">sheikhmohamm.ae</span>
-                        </div>
+                    </div>
+                    <div class="sheikhmohamm">
+                        <table style="width:100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>Follow Sheikh Mohammad</td>
+                                <td>sheikhmohamm.ae</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
-
             <div>
                 <div class="header">
                     <span><img src="images/discover/toolMark.png" width="30"></span>
@@ -51,120 +50,80 @@
 
 
                 <div class="list-group nomargin">
-                    <div class="btn-group justified">
-                        <div id="myCarousel" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="images/discover/dm_home_discover_06.png" class="sizepercent100"
-                                         alt="First slide">
-                                    <div class="carousel-caption textaligncenter">
-                                        <div class="div-caption-title">
-                                            <p class="caption-title">Deira Fish Market 1</p>
-                                        </div>
-                                        <p class="caption-content">
-                                            DM upcoming fish market is looking to bridge the past with the present
-                                        </p>
+                    <div class="btn-group justified" ng-controller="DiscoverController">
+                        <carousel interval="myInterval" classbuttonbg="fontColor-2" classarrow="colorwhite">
+                            <slide ng-repeat="slide in slides" active="slide.active">
+                                <img ng-src="{{slide.image}}" style="margin: auto;">
+                                <div class="carousel-caption textaligncenter">
+                                    <div class="div-caption-title">
+                                        <p class="caption-title">{{title}}</p>
                                     </div>
+                                    <p class="caption-content">{{slide.text}}</p>
                                 </div>
-
-                                <div class="item">
-                                    <img src="images/discover/dm_home_discover_06.png" class="sizepercent100"
-                                         alt="Second slide">
-                                    <div class="carousel-caption textaligncenter">
-                                        <div class="div-caption-title">
-                                            <p class="caption-title">Deira Fish Market 2</p>
-                                        </div>
-                                        <p class="caption-content">
-                                            DM upcoming fish market is looking to bridge the past with the present
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="images/discover/dm_home_discover_06.png" class="sizepercent100"
-                                         alt="Third slide">
-                                    <div class="carousel-caption textaligncenter">
-                                        <div class="div-caption-title">
-                                            <p class="caption-title">Deira Fish Market 3</p>
-                                        </div>
-                                        <p class="caption-content">
-                                            DM upcoming fish market is looking to bridge the past with the present
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a class="demo-carousel-control left"
-                               href="javascript:void(0)#myCarousel" data-slide="prev">
-                                <span class="fa-stack fa-lg fontColor-2">
-                                    <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-caret-left  fa-stack-1x fa-inverse colorwhite"></i>
-                                </span>
-                            </a> <a class="demo-carousel-control right"
-                                    href="javascript:void(0)#myCarousel" data-slide="next">
-                                <span class="fa-stack fa-lg fontColor-2">
-                                    <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-caret-right  fa-stack-1x fa-inverse colorwhite"></i>
-                                </span>
-                            </a>
-                        </div>
+                            </slide>
+                        </carousel>
                     </div>
 
                 </div>
-                <div class="list-group nomargin textaligncenter paddingbottom19" style="background-color: white; margin-top: -1px; ">
-                    <span class="cursorpointer" data-target="#myCarousel" data-slide-to="0"><i class="fa fa-circle fontsie25" id="yang1"></i></span> 
-                    <span class="cursorpointer" data-target="#myCarousel" data-slide-to="1"><i class="fa fa-circle fontsie25"></i></span>
-                    <span class="cursorpointer"data-target="#myCarousel" data-slide-to="2"><i class="fa fa-circle fontsie25"></i></span>
-                </div>
             </div>
-
-
             <div>
                 <div class="header">
                     <span><img src="images/discover/dm_home_discover_03.png" width="20"></span>
                     <span>New To Dubai</span>
                 </div>
                 <div class="newToDubaiList">
-                    <table cellpadding="0" cellspacing="0">
+                    <table cellpadding="0" cellspacing="0" id="NewsContent">
                         <tr>
-                            <td><img src="images/discover/dm_home_discover_07.png" width="100%"></td>
+                            <td>
+                                <img src="images/discover/dm_home_discover_07.png" width="100%">
+                            </td>
                             <td class="content">
                                 <div>Tribeca an NYC-inspired farm-to-table concept to open on JBR</div>
-                                <div class="triangle"><img src="images/discover/dm_home_discover_10.png" width="60%" /> </div>
+                                <div class="triangle">
+                                    <img src="images/discover/dm_home_discover_10.png" width="60%" />
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="content">
                                 <div>CATCH confirms Dubai Launch - and more new restaurants for 2015</div>
-                                <div class="triangle"><img src="images/discover/dm_home_discover_10.png"  width="60%" /> </div>
+                                <div class="triangle">
+                                    <img src="images/discover/dm_home_discover_10.png" width="60%" />
+                                </div>
                             </td>
-                            <td><img src="images/discover/dm_home_discover_14.png" width="100%"></td>
+                            <td>
+                                <img src="images/discover/dm_home_discover_14.png" width="100%">
+                            </td>
                         </tr>
                         <tr>
-                            <td><img src="images/discover/dm_home_discover_15.png" width="100%"></td>
+                            <td>
+                                <img src="images/discover/dm_home_discover_15.png" width="100%">
+                            </td>
                             <td class="content">
                                 <div>Sugar Moo in Dubai. New online bakery,Sugua Moo,delivers right to your door</div>
-                                <div class="triangle"><img src="images/discover/dm_home_discover_10.png" width="60%" /> </div>
+                                <div class="triangle">
+                                    <img src="images/discover/dm_home_discover_10.png" width="60%" />
+                                </div>
                             </td>
                         </tr>
+                    </table>
+                    
+                    <table cellpadding="0" cellspacing="0">
                         <tr>
                             <td colspan="2">
                                 <div class="loadMoreImg">
                                     <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-plus fa-stack-1x colorwhite"></i>
+                                        <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-plus fa-stack-1x colorwhite" onclick="GetMoreArticle('NewsContent');"></i>
                                     </span>
                                 </div>
-                                <!--<div class="loadMoreImg"><i class="fa fa-plus-circle fa-3x"></i></div>-->
                                 <div class="loadMore">Load More</div>
                             </td>
                         </tr>
                     </table>
 
-                    
+
                 </div>
             </div>
-
-
-
-
-
             <div class="WedtherBody bgColor-2">
                 <div class="header bgColor-1">
                     <span><img src="images/discover/dm_home_discover_19.png" width="30" height="30"></span>
@@ -175,7 +134,7 @@
                     <div class="sunImg"></div>
                     <div class="temperature">
                         <div class="t">26&#176;</div>
-                        <div>MOSTLY SUNNY</div>
+                        <div style="margin-top:-30px;">MOSTLY SUNNY</div>
                     </div>
                 </div>
 
@@ -183,31 +142,31 @@
                     <div>
                         <div class="item">
                             <span>Mon</span>
-                            <span class="spanImg"><img src="images/discover/dm_home_discover_27.png" /></span>
+                            <span class="spanImg"><img class="img" src="images/discover/dm_home_discover_27.png" /></span>
                             <span class="fontSize">20C</span>
                             <span class="fontSize">13C</span>
                         </div>
                         <div class="item">
                             <span>TUE</span>
-                            <span class="spanImg"><img src="images/discover/dm_home_discover_33.png" /></span>
+                            <span class="spanImg"><img class="img" src="images/discover/dm_home_discover_33.png" /></span>
                             <span class="fontSize">22C</span>
                             <span class="fontSize">13C</span>
                         </div>
                         <div class="item">
                             <span>WED</span>
-                            <span class="spanImg"><img src="images/discover/dm_home_discover_30.png" /></span>
+                            <span class="spanImg"><img class="img" src="images/discover/dm_home_discover_30.png" /></span>
                             <span class="fontSize">24C</span>
                             <span class="fontSize">13C</span>
                         </div>
                         <div class="item">
                             <span>THU</span>
-                            <span class="spanImg"><img src="images/discover/dm_home_discover_30.png" /></span>
+                            <span class="spanImg"><img class="img" src="images/discover/dm_home_discover_30.png" /></span>
                             <span class="fontSize">21C</span>
                             <span class="fontSize">13C</span>
                         </div>
                         <div class="item">
                             <span>FRI</span>
-                            <span class="spanImg"><img src="images/discover/dm_home_discover_27.png" /></span>
+                            <span class="spanImg"><img class="img" src="images/discover/dm_home_discover_27.png" /></span>
                             <span class="fontSize">20C</span>
                             <span class="fontSize">13C</span>
                         </div>
@@ -237,9 +196,7 @@
 
 
                 <div class="header bgColor-1" style="clear:both;">
-                    <span>
-                        <i class="fa fa-exclamation-triangle"></i>
-                    </span>
+                    <span><img src="images/discover/dm_home_discover_39.png" style="margin-right: 10px;margin-top: -5px;" width="20"></span>
                     <span>Emergency Phone Numbers</span>
                 </div>
 
@@ -247,27 +204,44 @@
                     <table class="emergencyItemTabel" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <span class="oneImg"></span>
+                                <span class="spanImg"><img class="img1" src="images/discover/dm_home_discover_43.png"/></span>
                                 <span>FIRE BRIGADE</span>
                             </td>
                             <td>
-                                <span class="twoImg"> </span>
+                                <span class="spanImg"><img class="img2" src="images/discover/dm_home_discover_46.png" /></span>
                                 <span>POLICE</span>
                             </td>
                             <td>
-                                <span class="threeImg"> </span>
+                                <span class="spanImg"><img class="img2" src="images/discover/dm_home_discover_49.png" /></span>
                                 <span>AMBULANCE</span>
-                            </td>
+                            </td>   
                             <td style="border-right:none;">
-                                <span class="fourImg"> </span>
+                                <span class="spanImg"><img class="img2 Image311" src="images/discover/dm_home_discover_52.png" /></span>
                                 <span>SERVICE</span>
                             </td>
                         </tr>
                     </table>
                 </div>
 
-                <div class="bgColor-1" style="height:200px; clear:both"></div>
+                <div class="bgColor-1" style="height:65px; clear:both"></div>
             </div>
         </div>
+
+
+
+
     </div>
 </div>
+
+<script type="text/javascript">
+    function GetMoreArticle(contentId) {
+        var c1 = $("#" + contentId + " tbody tr:eq(0)").html();
+        var c2 = $("#" + contentId + " tbody tr:eq(1)").html();
+        var len = $("#" + contentId + " tr").length;
+        if ((len / 3) % 2 > 0) {
+            $("#" + contentId).append("<tr>" + c2 + "</tr>").append("<tr>" + c1 + "</tr>").append("<tr>" + c2 + "</tr>");
+        } else {
+            $("#" + contentId).append("<tr>" + c1 + "</tr>").append("<tr>" + c2 + "</tr>").append("<tr>" + c1 + "</tr>");
+        }
+    }
+</script>

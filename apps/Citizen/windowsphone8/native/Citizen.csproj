@@ -295,6 +295,7 @@
 <Content Include="www\default\images\locationMap.png" />
 <Content Include="www\default\images\logo-ar.png" />
 <Content Include="www\default\images\logo.png" />
+<Content Include="www\default\images\map-pin.png" />
 <Content Include="www\default\images\map.png" />
 <Content Include="www\default\images\photo.png" />
 <Content Include="www\default\images\seebg.png" />
@@ -314,6 +315,7 @@
 <Content Include="www\default\js\controllers\MyFavoriteController.js" />
 <Content Include="www\default\js\controllers\SeeController.js" />
 <Content Include="www\default\js\controllers\service1controller.js" />
+<Content Include="www\default\js\controllers\Service2Controller.js" />
 <Content Include="www\default\js\controllers\ServicesController.js" />
 <Content Include="www\default\js\Directives\imageround.js" />
 <Content Include="www\default\js\initOptions.js" />

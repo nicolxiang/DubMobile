@@ -4,6 +4,7 @@
 citizenApp.controller('SeeController',function($scope, $http, $rootScope, $location) {
 					$scope.myInterval = 5000;
 					var slides = $scope.slides = [];
+					
 					$scope.addSlide = function() {
 						var newWidth = 600 + slides.length + 1;
 						slides.push({
@@ -17,4 +18,6 @@ citizenApp.controller('SeeController',function($scope, $http, $rootScope, $locat
 					for (var i = 0; i < 3; i++) {
 						$scope.addSlide();
 					}
+					
+					
 				});

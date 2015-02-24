@@ -20,6 +20,13 @@ body {
     font-style: normal;
 }
 
+@font-face {
+	font-family:'TradeGothic';
+	src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');
+	font-weight:normal;
+    font-style: normal;
+}
+
 
 /*------------------------------------------------------------------
 header/bottom nav bar
@@ -289,7 +296,7 @@ metro dashboard states
 
 .metro-nav .metro-nav-block .status, .metro-nav .metro-nav-block .tile-status {
     background-color: transparent;
-    font-size: 14px;
+    font-size: 12px;
     min-height: 22px;
     position: absolute;
     width: 100%;
@@ -303,7 +310,7 @@ custom sidebar styles
 */
 .sidebar-left, .sidebar-right {
     /*background: #e84343;*/
-    font-family: Helvetica;
+    font-family: 'TradeGothicLT',Helvetica;
     font-size: 0.75rem;
     font-weight: 700;
 }

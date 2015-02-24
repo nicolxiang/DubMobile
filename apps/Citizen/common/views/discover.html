@@ -53,13 +53,15 @@
                     <div class="btn-group justified" ng-controller="DiscoverController">
                         <carousel interval="myInterval" classbuttonbg="fontColor-2" classarrow="colorwhite">
                             <slide ng-repeat="slide in slides" active="slide.active">
+                            	<a href="#/event" >
                                 <img ng-src="{{slide.image}}" style="margin: auto;">
+                                </a>
                                 <div class="carousel-caption textaligncenter">
                                     <div class="div-caption-title">
                                         <p class="caption-title">{{title}}</p>
                                     </div>
                                     <p class="caption-content">{{slide.text}}</p>
-                                </div>
+                                </div>                               
                             </slide>
                         </carousel>
                     </div>
@@ -75,7 +77,9 @@
                     <table cellpadding="0" cellspacing="0" id="NewsContent">
                         <tr>
                             <td>
+                            	<a href="#/article">
                                 <img src="images/discover/dm_home_discover_07.png" width="100%">
+                                </a>
                             </td>
                             <td class="content">
                                 <div>Tribeca an NYC-inspired farm-to-table concept to open on JBR</div>
@@ -92,12 +96,16 @@
                                 </div>
                             </td>
                             <td>
+                            	<a href="#/article">
                                 <img src="images/discover/dm_home_discover_14.png" width="100%">
+                               </a>
                             </td>
                         </tr>
                         <tr>
                             <td>
+                            	<a href="#/article">
                                 <img src="images/discover/dm_home_discover_15.png" width="100%">
+                               </a>
                             </td>
                             <td class="content">
                                 <div>Sugar Moo in Dubai. New online bakery,Sugua Moo,delivers right to your door</div>

@@ -13,11 +13,17 @@ body styles
 body {
     font-family: 'TradeGothicLT', Arial, sans-serif, Helvetica;
 }
-
 @font-face {
     font-family: 'TradeGothicLT';
     src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family:'TradeGothic';
+	src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');
+	font-weight:normal;
     font-style: normal;
 }
 
@@ -49,8 +55,7 @@ header/bottom nav bar
 }
 
 .navbar-absolute-bottom {
-    height: 83px;
-
+    height: 3.2rem;
 }
 
 
@@ -60,7 +65,7 @@ header/bottom nav bar
     display: block;
     float: left!important;
     font-weight: 300;
-    height: 83px;
+    height: 3.2rem;
     letter-spacing: 0.02em;
     line-height: 20px;
     overflow: hidden;
@@ -68,14 +73,29 @@ header/bottom nav bar
     text-decoration: none;
     z-index: 1;
     width: 25%;
+    
+}
+
+.nav-block-title{
+	border-right: 1px #fff solid;
+}
+.nav-block-title:last-child{
+	border-right: none;
+}
+
+
+.nav-block-split{
+	width: 1px;
+	height: 83px;
+	background: #fff;
 }
 
 .navbar-absolute-bottom .btn-navbar {
     color: white;
-    font-size: 18px;
+    font-size:1.3rem;
     font-weight: 400;
     height: 100%;
-    line-height: 16px;
+    line-height: 1.3rem;
     overflow: hidden;
     position: absolute;
     text-overflow: ellipsis;
@@ -84,17 +104,20 @@ header/bottom nav bar
     text-decoration: none;
     text-align: center;
     padding: 0;
+    text-transform:capitalize !important;
 }
 
 .navbar-absolute-bottom .btn-navbar i {
     font-size: 30px;
     margin-top: 15px;
     display: inline-block;
+    width:1.25rem;
+    height: 1.25rem;
 }
 
 .navbar-absolute-bottom .btn-navbar .status {
     background-color: transparent;
-    font-size: 16px;
+    font-size: 0.65rem;
     min-height: 22px;
     position: absolute;
     width: 100%;
@@ -103,12 +126,13 @@ header/bottom nav bar
     font-family: "TradeGothicLT";
 }
 
+
 /*------------------------------------------------------------------
 metro dashboard states
 */
 .metro-nav {
     position: absolute;
-    height: 65px;
+    height:calc(width / 12 + 5);
     width: 100%;
     z-index: 101;
 }
@@ -257,9 +281,7 @@ metro dashboard states
     opacity: 0.6;
 }
 
-.metro-nav .metro-nav-block:hover {
-    opacity: 0.8;
-}
+
 
 .metro-nav .metro-nav-block.double a {
     width: 94%;
@@ -274,12 +296,13 @@ metro dashboard states
 
 .metro-nav .metro-nav-block .status, .metro-nav .metro-nav-block .tile-status {
     background-color: transparent;
-    font-size: 14px;
+    font-size: 12px;
     min-height: 22px;
     position: absolute;
     width: 100%;
     bottom: 0;
     text-align: center;
+    white-space: nowrap;
 }
 
 /*------------------------------------------------------------------
@@ -287,7 +310,9 @@ custom sidebar styles
 */
 .sidebar-left, .sidebar-right {
     /*background: #e84343;*/
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'TradeGothicLT',Helvetica;
+    font-size: 0.75rem;
+    font-weight: 700;
 }
 
 .list-group-item.active, .list-group-item.active:focus {
@@ -297,16 +322,18 @@ custom sidebar styles
 
 .sidebar-right a.list-group-item {
     background: none;
-    color: #fff;
+    color: #fff !important;
     text-align: right;
 }
 
 .sidebar-right .list-group-item, .sidebar-right a.list-group-item {
-    border-bottom: 1px solid #de7c62;
+    border-bottom: 1px solid #000;
 }
 
 .sidebar-right .list-group-item i {
-    margin-left: 10px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 15px;
 }
 
 /*------------------------------------------------------------------
@@ -391,124 +418,136 @@ custom label and badges
 custom icon styles
 */
 .ico-book {
-    background: url("../images/ico-book.png") no-repeat;
+    background: url("../images/icons/ico-book.png") no-repeat;
+    background-size: 100%;
     display: inline-block;
-    width: 27px;
-    height: 29px;
+    width: 50px;
+    height: 50px;
 }
 
-.fa-dm{
-	background-image: url(../images/dm.png);
+.ico-about-dm{
+	background-image: url(../images/icons/dm.png);
 	width: 14px;
 	height: 14px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: top;
 	position: relative;
-	top: 0px;
+	top: 5px;
 }
 
-.fa-dm-apps{
-	background-image: url(../images/dm-app.png);
+.ico-dm-apps{
+	background-image: url(../images/icons/dm-app.png);
 	width: 23px;
 	height: 39px;
 	background-size: 75%;
 	background-repeat: no-repeat;
 	background-position:center top;
 	position:relative;
-	top: 0px;
+	top: 10px;
 }
 
-.fa-services{
-	background-image: url(../images/fa-services.png);
+.ico-dm-services{
+	background-image: url(../images/icons/fa-services.png);
 	width: 40px;
 	height: 34px;
 	background-size: 75%;
 	background-repeat: no-repeat;
 	background-position:center top;
 	position:relative;
-	top: 0px;
+	top: 10px;
 }
 
-.fa-see{
-	background-image: url(../images/fa-see.png);
+.ico-see{
+	background-image: url(../images/icons/fa-see.png);
 	width: 40px;
 	height: 34px;
 	background-size: 90%;
 	background-repeat: no-repeat;
 	background-position:center center;
 	position:relative;
-	top: 0px;
+	top: 10px;
 }
 
-.fa-discover{
-	background-image: url(../images/fa-discover.png);
+.ico-discover{
+	background-image: url(../images/icons/fa-discover.png);
 	width: 24px;
 	height: 39px;
 	background-size: 75%;
 	background-repeat: no-repeat;
 	background-position:center top;
 	position:relative;
-	top: 0px;
+	top: 10px;
 }
 
-.fa-business{
-	background-image: url(../images/fa-business.png);
+.ico-business{
+	background-image: url(../images/icons/fa-business.png);
 	width: 48px;
 	height: 32px;
 	background-size: 75%;
 	background-repeat: no-repeat;
 	background-position:center top;
 	position:relative;
-	top: 0px;
+	top: 10px;
 }
 
-.dm-dashboard{
-	background-image: url(../images/fa-dashboard.png);
+.ico-dashboard{
+	background-image: url(../images/icons/fa-dashboard.png);
 	width: 43px;
 	height: 30px;
 	background-size: 75%;
 	background-repeat: no-repeat;
 	background-position:center top;
 	position:relative;
-	top: 0px;
+	top: 10px;
 }
 
-.fa-glassware{
-	background-image: url(../images/glasswear.png);
+.ico-glassware{
+	background-image: url(../images/icons/glasswear.png);
 	width: 14px;
 	height: 14px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	top: 3px;
+	top: 5px;
 }
 
-.fa-open-book{
-	background-image: url(../images/book.png);
+.ico-open-book{
+	background-image: url(../images/icons/book.png);
 	width: 14px;
 	height: 14px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	top: 3px;
+	top: 5px;
 }
 
-.dm-dashboard-black{
-	background-image: url(../images/dashboard-black.png);
+.ico-search-black{
+    background-image: url(../images/icons/fa-search.png);
+    width:37px;
+    height: 41px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center bottom;
+    position:relative;
+    top: 5px;
+}
+
+.ico-dashboard-black{
+	background-image: url(../images/icons/dashboard-black.png);
 	width: 18px;
 	height: 15px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
-	top: 0px;
+	top: 5px;
 }
 
-.dm-heart-black{
-	background-image: url(../images/heart-black.png);
+.ico-heart-black{
+	background-image: url(../images/icons/heart-black.png);
 	width: 18px;
 	height: 18px;
 	background-size: 100%;
@@ -517,8 +556,8 @@ custom icon styles
 	position:relative;
 	top: 5px;
 }
-.documents-black{
-	background-image: url(../images/documents-black.png);
+.ico-documents-black{
+	background-image: url(../images/icons/documents-black.png);
 	width: 18px;
 	height: 19px;
 	background-size: 100%;
@@ -528,8 +567,8 @@ custom icon styles
 	top: 5px;
 }
 
-.user-black{
-	background-image: url(../images/user-black.png);
+.ico-user-black{
+	background-image: url(../images/icons/user-black.png);
 	width: 17px;
 	height: 19px;
 	background-size: 100%;
@@ -538,18 +577,18 @@ custom icon styles
 	position:relative;
 	top: 5px;
 }
-.eye-black{
-	background-image: url(../images/eye-black.png);
+.ico-eye-black{
+	background-image: url(../images/icons/eye-black.png);
 	width: 18px;
 	height: 13px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
-	top: 0px;
+	top: 5px;
 }
-.light-black{
-	background-image: url(../images/light-black.png);
+.ico-light-black{
+	background-image: url(../images/icons/light-black.png);
 	width: 12px;
 	height: 19px;
 	background-size: 100%;
@@ -558,26 +597,92 @@ custom icon styles
 	position:relative;
 	top: 5px;
 }
-.business-black{
-	background-image: url(../images/business-black.png);
+.ico-business-black{
+	background-image: url(../images/icons/business-black.png);
 	width: 18px;
 	height: 15px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
-	top: 0px;
+	top: 5px;
 }
-.contact-us-black{
-	background-image: url(../images/contact-us-black.png);
+.ico-contact-us-black{
+	background-image: url(../images/icons/contact-us-black.png);
 	width: 18px;
 	height: 15px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position:center bottom;
 	position:relative;
+	top: 5px;
+}
+
+.ico-my-cart{
+	background-image: url(../images/icons/my-cart.png);
+	width:50px;
+	height: 50px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	position:relative;
 	top: 0px;
 }
+
+.ico-my-schedule{
+	background-image: url(../images/icons/my-schedule.png);
+	width: 50px;
+	height: 50px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	position:relative;
+	top: 0px;
+}
+
+.ico-more-blue{
+	background-image: url(../images/icons/more.png);
+	width: 50px;
+	height: 50px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	position:relative;
+	top: 0px;
+}
+
+.ico-arrow-down{
+	background-image: url(../images/icons/arrow-down.png);
+	width: 36px;
+	height: 36px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	position:relative;
+	top: 0px;	
+}
+
+.ico-selected-blue{
+	background-image: url(../images/icons/selected-blue.png);
+	width: 36px;
+	height: 36px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	position:relative;
+	top: 0px;	
+}
+.ico-unselected-empty{
+	background-image: url(../images/icons/unselected-empty.png);
+	width: 36px;
+	height: 36px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	position:relative;
+	top: 0px;	
+}
+
 .text-align{
     text-align: center;
 }
@@ -588,28 +693,31 @@ custom icon styles
   font-size: 18px;
 }
 
+.search-form{
+	text-align: center;
+	margin-top: 50px;
+	border:none;	
+	line-height: 20px;
+	padding: 5px;
+}
+
 /*search input*/
 .searchLable {
-    position: relative;
-    top: 44px;
-    float: right;
-    margin-right: 10px;
     width:32px;
-    height:32px;
+    height:32px;   
 }
-.searchInput {
-    border: none; 
-    text-align: center; 
-    font-size: 15px; 
-    line-height: 45px; 
-    border-radius:0px;
-    height:45px;
-    font-weight: 700;
-    font-family:Helvetica;
+
+.searchInput{
+	border:none;
+	min-width: 200px;
+	padding-right:5px;
+	font-size: 20px;
 }
 
 .searchInput::-webkit-input-placeholder {
 color: black !important; /* WebKit browsers */
+font-size: 20px;
+
 }
 .searchInput:-moz-placeholder {
 color: black !important; /* Mozilla Firefox 4 to 18 */
@@ -621,4 +729,17 @@ color: black !important; /* Mozilla Firefox 19+ */
 color: black !important; /* Internet Explorer 10+ */
 }
 
+
+.carousel-inner > .item {
+  -webkit-transition: 0.3s left !important;
+  -o-transition: 0.3s left !important;
+  transition: 0.3s left !important;
+}
+
+.carousel-caption{
+	text-shadow:none;
+}
+.clear{
+	clear:both;
+}
 

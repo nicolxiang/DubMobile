@@ -1,0 +1,91 @@
+﻿<style>
+.navbar{
+  background: #0faab6;
+}
+.sidebar-left, .sidebar-right{
+  background: #0faab6;
+}
+
+.sidebar-right a.list-group-item{
+  color:#000;
+}
+.scrollable-content{
+ /* padding-top: 65px;*/
+}
+.payment-new{
+  background-color: #fff;
+}
+.btn-payment-submit{
+  width: 98%;
+  text-align: right;
+  background-color: #ff8f71;
+  color: #fff;
+  font-size: 18px;
+  padding-right: 40px;
+}
+
+.form-btn{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.div-border{
+  border-bottom: 1px solid #c7c7c7; 
+  margin-left: 12px;
+  margin-top: 10px;
+}
+.div-border2{
+  border-bottom: 1px solid #000; 
+}
+.border-none{
+  border:none;
+}
+.payment-new .form-group{
+  padding-bottom: 5px;
+}
+
+</style>
+<div class="scrollable">  
+	<div class="scrollable-content"> 
+    <div class="payment-new">
+     <form name="paymentForm">
+        <div class="form-group">
+          <input type="text" class="form-control border-none font-18" id="txtName" placeholder="Name on card">
+          <div class="div-border"></div>
+        </div>
+        <div class="form-group">
+          <select class="form-control border-none font-18" id="selCardType" style="padding-left:8px;">
+            <option>Credit Card Type</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control border-none font-18" id="txtCardNumber" placeholder="Credit Card Number">
+          <div class="div-border"></div>
+        </div>
+        <div class="form-group">
+          <input type="datetime" class="form-control border-none font-18" id="txtExpiryDate" placeholder="Expiry Date">
+          <div class="div-border"></div>
+        </div>
+        <div class="form-group div-border2">
+          <input type="text" class="form-control border-none font-18" id="txtCode" placeholder="Security Code">
+        </div>
+        <div class="form-group form-btn">
+          <div class="checkbox">
+            <label class="checkbox-inline font-18" style="line-height:12px;">
+              <input type="checkbox" value="" id="chkSaveCard" >
+              Save Card
+            </label>
+            <label class="checkbox-inline font-18" style="line-height:12px;">
+              <input type="checkbox" value="" id="chkDefault" checked>
+              Default
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-btn">
+            <button type="submit" class="btn btn-default btn-payment-submit" id="btnSubmit" >Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+	</div>
+</div>
