@@ -1,5 +1,7 @@
 ﻿
 /* Stylesheet content from css/see.css in folder common */
+
+/* Stylesheet content from css/see.css in folder common */
 /* Stylesheet content from css/see.css in folder common */
 
 
@@ -160,7 +162,7 @@ vertical-align:middle;
 .caption-title{
 	font-weight:bold;
 	font-size: 20px;
-    /*font-family:'TradeGothic';*/
+    font-family:'TradeGothic';
 }
 
 .caption-date{
@@ -172,8 +174,8 @@ vertical-align:middle;
 
 .caption-content{
 	font-size: 16px;
-    padding-bottom:54px;
-    font-family:'TradeGothic','Helvetica';
+    padding-bottom:10px;
+    font-family:'Helvetica';
 }
 
 .paddingbottom19{

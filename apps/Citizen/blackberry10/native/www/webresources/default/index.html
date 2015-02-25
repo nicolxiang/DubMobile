@@ -1,4 +1,4 @@
-<!DOCTYPE html><html dir="{{selectedLanguage.dir}}" lang="{{selectedLanguage.lang}}" ng-app="CitizenApp">
+<html dir="{{selectedLanguage.dir}}" lang="{{selectedLanguage.lang}}" ng-app="CitizenApp">
     <head>
         <meta charset="UTF-8">
         <title>Dubai App</title>
@@ -48,7 +48,10 @@
     <script src="js/controllers/BusinessController.js"></script>
 	<script src="js/controllers/DiscoverController.js"></script>
     <script src="js/controllers/service1controller.js"></script>
-    <script src="js/controllers/service2controller.js"></script>
+    <script src="js/controllers/eventdetailcontroller.js"></script>
+    <script src="js/controllers/articleController.js"></script>
+    <script src="js/services/eventservice.js"></script>
+    <script src="js/services/articleservice.js"></script>
     <script src="js/directives/imageround.js"></script>
     <!--<script src="js/AccelaSDK.js"></script>-->
     <script>
@@ -78,26 +81,25 @@
             <!--</div>-->
         <!--</div>-->
             <div class="navbar navbar-app navbar-absolute-top" ng-style="style" style="display: table">
-                <div class="navbar-brand navbar-brand-center" ui-yield-to="title">
+                <div class="navbar-brand navbar-brand-center" style="z-index:1" ui-yield-to="title">
                 iDubai
             </div>
-                <div class="btn-group" style="vertical-align: middle;display: table-cell;text-align: left;">
-                    <div class="btn sidebar-toggle notify-row" ui-toggle="uiSidebarLeft">
-                        <i class="fa fa-bell-o"></i>
-                    <span class="badge badge-default" style="position: relative;top: -7px;left: -13px;">7</span>
+                <div class="back" ng-show="hasBack" style="z-index: 999;position: relative">
+                    <div class="sidebar-toggle" ng-click="goBack();">
+                        <i class="fa fa-angle-left fa-2x"></i>
                     </div>
                 </div>
-                <div class="btn-group" style="vertical-align: middle;display: table-cell;text-align: right;float: none" ui-yield-to="navbarAction">
+                <div class="btn-group" style="vertical-align: middle;display: table-cell;text-align: right;float: none;z-index: 999;" ui-yield-to="navbarAction">
                     <div class="btn" style="float: none" ui-toggle="uiSidebarRight">
                         <i class="fa fa-bars"></i>
                     </div>
                 </div>
             </div>
         <!-- App Body -->
-            <div class="app-body" ng-class="{loading: loading}">
-                <div class="app-content-loading" ng-show="loading">
-                    <i class="fa fa-spinner fa-spin loading-spinner"></i>
-                </div>
+            <div class="app-body">
+            <!--<div ng-show="loading" class="app-content-loading">-->
+                <!--<i class="fa fa-spinner fa-spin loading-spinner"></i>-->
+            <!--</div>-->
                 <div class="app-content">
                     <ng-view></ng-view>
                 </div>
@@ -107,7 +109,7 @@
         <div ui-yield-to="modals"></div>
         <script>
     	$(document).ready(function () {
-            var fontsize=$(document).width()/640*40;
+            var fontsize=$(document).width()<640?$(document).width()/640*40:20;
             $('html').css('font-size',fontsize+'px');
         });
     </script>

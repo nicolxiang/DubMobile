@@ -1,5 +1,7 @@
 
 /* Stylesheet content from css/me.css in folder common */
+
+/* Stylesheet content from css/me.css in folder common */
 .navbar {
     background: #7BB76F;
 }
@@ -22,7 +24,7 @@
     background: #fff !important;
     margin-bottom: 100px;
     font-family:Helvetica !important;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -97,6 +99,7 @@
             border-bottom: solid 1px #ccc;
             height: 3.275rem;
             display: table;
+            width: 100%;
         }
 
             .div-me .list .item .item-title {
@@ -115,10 +118,11 @@
 
 .div-me .list .item .item-left {
     float: left;
-    width:11.3rem;
     display: table-cell;
     vertical-align: middle;
     padding-right: 15px;
+    width:calc(100% - 5rem);
+    width:-webkit-calc(100% - 4.2rem);
 }
 .div-me .list .item .item-right {
     width:3.9rem;

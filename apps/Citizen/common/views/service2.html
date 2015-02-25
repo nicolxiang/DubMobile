@@ -2,7 +2,7 @@
 
 <div class="scrollable" ng-controller="Service2Controller">
 	<div class="scrollable-content view-wrapper">
-		<div>
+		<div style="border-bottom: 1px solid #000;">
 			<div class="s-dropdown">
 				<div class="text">
 					<span id="">{{selectedPestType}}</span>
@@ -11,29 +11,33 @@
 							<i class="fa ico-arrow-down pull-right"></i>
 						</a>
 						<ul class="dropdown-menu" ui-outer-click="Ui.turnOff('myDropdown')" ui-outer-click-if="Ui.active('myDropdown')" role="menu" ui-show="myDropdown" ui-state="myDropdown" ui-turn-off="myDropdown">
-
 							<li>
 								<a ng-click="selectPestType('Medical Fitness Certificate')">Medical Fitness Certificate</a>
 							</li>
 							<li>
 								<a ng-click="selectPestType('Free of Communicable Disease Certificate')">Free of Communicable Disease Certificate</a>
-							</li>							
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<!---->
-			<div style="border-bottom: 1px solid #c7c7c7;">
-				<input style="width:100%;height: 45px;line-height: 45px;border: none;font-size: 1.5em;padding-left: 15px;" type="text" name="appointmentDate" placeholder="Appointment Date" />
-			</div>
-			<div style="border-bottom: 1px solid #000;">
-				<input style="width:100%;height: 45px;line-height: 45px;border: none;font-size: 1.5em; padding-left: 15px;" type="text" name="appointmentTime" placeholder="Appointment Time" />
-			</div>
-			<div style="height: 60px;line-height: 60px;font-size: 1.5em;color: #999999;padding-left: 15px;">
-				<span>Clinic Location</span>
-				<div>
-					
-				</div>
+		</div>
+		<div style="border-bottom: 1px solid #C7C7C7;">
+			<input type="text" name="appointmentDate" style="width:100%;height: 45px;line-height: 45px;padding-left: 15px;border: none;font-size: 1.5em;" placeholder="Appointment Date" />
+			
+		</div>
+		<div style="border-bottom: 1px solid #000;">
+			<input type="text" name="appointmentTime" style="width:100%;height: 45px;line-height: 45px;padding-left: 15px;border: none;font-size: 1.5em;" placeholder="Appointment Time" />
+		</div>
+		<div>
+			<div class="pull-left" style="font-size: 1.5em;padding-left: 15px;height: 45px;line-height: 45px;">Clinic Location</div>
+			<div class="btn-group  pull-right" style="height: 45px;line-height: 45px;">
+				<a ui-toggle="lightbulb" ui-class="{'active': lightbulb}" class="btn btn-default  active" href="">
+			          List
+			    </a>
+			    <a ui-turn-off="lightbulb" ui-class="{'active': !lightbulb}" class="btn btn-default" href="">
+		          Map
+		      </a>
 			</div>
 		</div>
 	</div>

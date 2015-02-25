@@ -1,0 +1,18 @@
+﻿
+/* Stylesheet content from css/article.css in folder common */
+.view-wrapper{
+	margin-top:65px;
+	background:#fff;
+}
+
+.navbar{
+	background: #0f85b6;
+}
+
+.sidebar-left, .sidebar-right{
+	background: #0f85b6;
+}
+
+.sidebar-right a.list-group-item{
+	color:#000;
+}

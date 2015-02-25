@@ -39,11 +39,13 @@
 /css/app-responsive.css
 /css/app-rtl.css
 /css/app.css
+/css/article.css
 /css/bootstrap.css
 /css/business.css
 /css/carousel.css
 /css/detail.css
 /css/discover.css
+/css/event.css
 /css/favorites.css
 /css/home.css
 /css/main.css
@@ -188,8 +190,10 @@
 /index.html
 /jquery/jquery-1.11.1.min.js
 /js/app.js
+/js/controllers/articleController.js
 /js/controllers/BusinessController.js
 /js/controllers/DiscoverController.js
+/js/controllers/eventdetailcontroller.js
 /js/controllers/MainController.js
 /js/controllers/MyFavoriteController.js
 /js/controllers/SeeController.js
@@ -201,6 +205,8 @@
 /js/main.js
 /js/messages.js
 /js/routing.js
+/js/services/articleservice.js
+/js/services/eventservice.js
 /SDK/common/modelConverter.js
 /SDK/common/validator.js
 /SDK/common/xhr.js
@@ -211,11 +217,13 @@
 /SDK/model/baseModel.js
 /SDK/model/PermitModel.js
 /SDK/webSDK/AccelaSDK.js
+/views/article.html
 /views/bell.html
 /views/business.html
 /views/dashboard.html
 /views/details.html
 /views/discover.html
+/views/event-detail.html
 /views/favorites.html
 /views/hamburger.html
 /views/home.html

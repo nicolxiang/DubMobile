@@ -1,5 +1,7 @@
 
 /* Stylesheet content from css/service1.css in folder common */
+
+/* Stylesheet content from css/service1.css in folder common */
 .navbar{
     background: #e84343;
 }
@@ -72,6 +74,11 @@
 .s-map{
     position: relative;
     background-image: url(../images/map.png);
+    width:100%;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .s-map img{
     width: 100%;

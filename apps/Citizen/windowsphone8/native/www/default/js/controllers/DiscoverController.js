@@ -1,5 +1,7 @@
 ﻿
 /* JavaScript content from js/controllers/DiscoverController.js in folder common */
+
+/* JavaScript content from js/controllers/DiscoverController.js in folder common */
 /**
  * 
  */

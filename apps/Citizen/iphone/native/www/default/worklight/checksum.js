@@ -1,2 +1,3 @@
-var WL_CHECKSUM = {"date":1424678252552,"machine":"lucas-chen","checksum":2882470367};
-/* Date: Mon Feb 23 15:57:32 CST 2015 */
+var WL_CHECKSUM = {"date":1424753587115,"machine":"lucas-chen","checksum":3960386819};
+var WL_SKINLOADER_CHECKSUM = {"checksum":4250389799};
+/* Date: Tue Feb 24 12:53:07 CST 2015 */

@@ -1,0 +1,98 @@
+﻿<style type="text/css">
+	.navbar{
+	        background: #0faab6;
+	    }
+	
+	    .sidebar-left, .sidebar-right{
+	        background: #e84343;
+	    }
+	
+	    .sidebar-right a.list-group-item{
+	        color:#000;
+	    }
+	    
+	    .view-wrapper{	    	
+	        background:#fff;
+	        min-height: -webkit-calc(100%);
+	        min-height: -moz-calc(100%);
+	        min-height: calc(100%);
+	    }
+	
+	    .section-header{
+	        height: 65px;
+	        line-height: 65px;
+	        text-align: left;
+	        font-size: 18px;
+	        color: #999999;
+	        padding-left: 15px;
+	        border-bottom: 1px solid #000;
+	    }
+	    .div-event{
+	    font-family: Helvetica;
+	        font-size: 0.8rem;
+	    }
+	    .navbar-absolute-bottom{
+	        padding-left: 10px;
+	        padding-right: 10px;
+	        padding-top: 15px;
+	        background: #0faab6;
+	        height: 72px;
+	    }
+	    .div-event .event-img img{
+	        width: 100%;
+	    }
+	
+	    .div-event .event-title{
+	        padding-left: 0.6rem;
+	        padding-left: 0.6rem;
+	        font-size: 1rem;
+	        font-weight: 700;
+	    }
+	    .div-event .event-date{
+	        padding-left: 0.6rem;
+	        padding-left: 0.6rem;
+	        border-bottom: 1px solid #ccc;
+	    }
+	    .div-event .event-text{
+	        padding-left: 0.6rem;
+	        padding-left: 0.6rem;
+	    }
+</style>
+<div class="scrollable" ng-controller="articleDetailController as articleCtrl">
+	<div class="scrollable-content view-wrapper">
+		<div class="div-event">
+			<div class="event-img">
+				<img ng-src="{{articleCtrl.article.image}}" />
+			</div>
+			<div class="event-title">{{articleCtrl.article.title}}</div>
+			<div class="event-date">{{articleCtrl.article.date}}</div>
+			<div class="event-text">
+				{{articleCtrl.article.text}}
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="navbar-absolute-bottom">
+	<div class="btn-group pull-right dropup">
+		<a ui-turn-on="myDropdown" class="btn btn-primary">
+
+            Share
+
+        </a>
+		<ul class="dropdown-menu" ui-outer-click="Ui.turnOff('myDropdown')" ui-outer-click-if="Ui.active('myDropdown')" role="menu" ui-show="myDropdown" ui-state="myDropdown" ui-turn-off="myDropdown">
+
+			<li><a>Facebook</a>
+			</li>
+			<li><a>Twitter</a>
+			</li>
+			<li><a>Message</a>
+			</li>
+			<li><a>Copy Link</a>
+			</li>
+			<li class="divider"></li>
+			<li><a>Cancel</a>
+			</li>
+		</ul>
+	</div>
+</div>

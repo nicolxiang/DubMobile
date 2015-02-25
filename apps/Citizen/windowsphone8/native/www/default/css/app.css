@@ -1,5 +1,7 @@
 ﻿
 /* Stylesheet content from css/app.css in folder common */
+
+/* Stylesheet content from css/app.css in folder common */
 /*------------------------------------------------------------------
 
 [Responsive Stylesheet]
@@ -17,13 +19,6 @@ body {
     font-family: 'TradeGothicLT';
     src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-	font-family:'TradeGothic';
-	src: url('../fonts/TradeGothicLTBoldCondensed.ttf') format('truetype');
-	font-weight:normal;
     font-style: normal;
 }
 
@@ -58,6 +53,12 @@ header/bottom nav bar
     height: 3.2rem;
 }
 
+.navbar .back{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+    padding-left:10px
+}
 
 .navbar-absolute-bottom .nav-block-title {
     color: white;
@@ -310,7 +311,7 @@ custom sidebar styles
 */
 .sidebar-left, .sidebar-right {
     /*background: #e84343;*/
-    font-family: 'TradeGothicLT',Helvetica;
+    font-family: Helvetica;
     font-size: 0.75rem;
     font-weight: 700;
 }
@@ -731,7 +732,7 @@ color: black !important; /* Internet Explorer 10+ */
 
 
 .carousel-inner > .item {
-  -webkit-transition: 0.3s left !important;
+  -webkit-transition:  0.3s left !important;
   -o-transition: 0.3s left !important;
   transition: 0.3s left !important;
 }
@@ -741,5 +742,30 @@ color: black !important; /* Internet Explorer 10+ */
 }
 .clear{
 	clear:both;
+}
+
+
+/* animation */
+.fade{
+    opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
 }
 

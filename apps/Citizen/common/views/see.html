@@ -1,100 +1,93 @@
-<link href="css/carousel.css" rel="stylesheet">
 
+
+<link href="css/carousel.css" rel="stylesheet">
 <link href="css/see.css" rel="stylesheet">
 <div ng-include="'views/nav.html'"></div>
-<div class="scrollable">
+<div class="scrollable" ng-controller="SeeController">
 	<div class="scrollable-content view-wrapper">
 
 		<div class="list-group seehead">
-			<img style="width: 6.5625%" src="images/AroundTown.png" />What's Happening Around Town
+            <img style="width: 6.5625%" src="images/AroundTown.png" />What's
+			Happening Around Town
 		</div>
 
 		<div class="list-group nomargin">
-			<div class="btn-group justified" ng-controller="SeeController" style="height:150px;">
-				<carousel interval="myInterval" classbuttonbg="colorblue" classarrow="colorwhite">
-					<slide ng-repeat="slide in slides" active="slide.active">
-						<a href="#/event">
-						<img ng-src="{{slide.image}}">
-						</a>
-						<div class="carousel-caption textaligncenter">
-							<div class="div-caption-title">
-								<p class="caption-title">{{slide.title}}</p>
-							</div>
-							<p class="caption-date">{{slide.date}}</p>
-							<p class="caption-content">{{slide.text}}</p>
+			<div class="btn-group justified" style="height:150px;">
+			  <carousel interval="myInterval" classbuttonbg="colorblue" classarrow="colorwhite"> 
+                <slide ng-repeat="slide in slides" active="slide.active" ng-click="gotoDetail(slide);">
+                         <img
+						ng-src="{{slide.image}}">
+					<div class="carousel-caption textaligncenter">
+						<div class="div-caption-title">
+							<p class="caption-title">{{slide.title}}</p>
 						</div>
-						
-					</slide>
-				</carousel>
+						<p class="caption-date">{{slide.date}}</p>
+						<p class="caption-content">{{slide.text}}</p>
+					</div>
+					</slide> </carousel>
 			</div>
 		</div>
 		<div class="list-group seehead">
-			<img style="width: 7.1875%" src="images/Headlines.png" />What's Making Headlines
+            <img style="width: 7.1875%" src="images/Headlines.png" />What's Making
+			Headlines
 		</div>
 
-		<div class="list-group nomargin" id="HeadlinesContent">
-			<div class="btn-group justified item1">
-				<a href="#/article">
-					<div class="widthpercent50 pull-left">
-						<img class="sizepercent100" src="images/dm_home_see_08.png" />
-					</div>
-					<div class="pull-right seecontent " style="background: url('images/seebg.png') no-repeat; background-size: 100% 100%;">
-						Six of Dubai's Feel-good Healthy Desserts
-					</div>
-				</a>
-			</div>
-			<div class="btn-group justified item2">
-				<a href="#/article">
-				<div class="pull-left seecontent" style="background: url('images/seebg.png') no-repeat; background-size: 100% 100%;">
-					Go Organic! UAE farmers delivering organic produce direct to your door
-				</div>
-				<div class="pull-right widthpercent50">
-					<img class="sizepercent100" src="images/dm_home_see_11.png" />
-				</div>
-				</a>
-			</div>
-			<div class="btn-group justified">
-				<a href="#/article">
-				<div class="pull-left widthpercent50">
-					<img class="sizepercent100" src="images/dm_home_see_12.png" />
-				</div>
-				<div class="pull-right seecontent" style="background: url('images/seebg.png') no-repeat; background-size: 100% 100%;">
-					Love Tom and Serg? Look At What They Have in Store Next...
-				</div>
-				</a>
-			</div>
-		</div>
+        <div class="list-group nomargin" id="HeadlinesContent">
+            <div class="btn-group justified item1">
+                <div class="widthpercent50 pull-left">
+                    <img class="sizepercent100" src="images/dm_home_see_08.png" />
+                </div>
+                <div ng-click="gotoArticle(articles[0]);" class="pull-right seecontent " 
+                     style="background: url('images/seebg.png') no-repeat; background-size: 100% 100%;">
+                    Six of Dubai's Feel-good Healthy Desserts
+                </div>
+            </div>
+            <div class="btn-group justified item2">
+                <div ng-click="gotoArticle(articles[1]);" class="pull-left seecontent"
+                     style="background: url('images/seebg.png') no-repeat; background-size: 100% 100%;">
+                    Go Organic! UAE farmers delivering organic produce direct to your
+                    door
+                </div>
+                <div class="pull-right widthpercent50">
+                    <img class="sizepercent100" src="images/dm_home_see_11.png" />
+                </div>
+            </div>
+            <div class="btn-group justified">
+                <div class="pull-left widthpercent50">
+                    <img class="sizepercent100" src="images/dm_home_see_12.png" />
+                </div>
+                <div ng-click="gotoArticle(articles[2]);" class="pull-right seecontent"
+                     style="background: url('images/seebg.png') no-repeat; background-size: 100% 100%;">
+                    Love Tom and Serg? Look At What They Have in Store Next...
+                </div>
+            </div>
+        </div>
 
 		<div class="list-group seeloadmore">
 
 			<span class="fa-stack fa-lg colorblue"> <i
 				class="fa fa-circle fa-stack-2x"></i> <i
 				class="fa fa-plus fa-stack-1x colorwhite" onclick="GetMoreArticle('HeadlinesContent')"></i>
-			</span>
-			<br> <span class="spanloadmore">Load More</span>
+			</span><br> <span class="spanloadmore">Load More</span>
 		</div>
 
 		<div class="list-group seehead">
 			<img style="width: 7.8125%" src="images/photo.png" />#HappyDubai
 		</div>
 		<div class="list-group nomargin">
-			<a href="#/article">
 			<img class="sizepercent100" src="images/dm_home_see_20.png" />
-			</a>
 		</div>
 
 		<div class="list-group seeshare">
-			<!--<img src="images/Camera.png">-->
-			<span class="fa-stack fa-lg colorwhite">
-
+            <!--<img src="images/Camera.png">-->
+            <span class="fa-stack fa-lg colorwhite">
                 <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-instagram fa-stack-1x fa-inverse colorblue"></i>
-
-            </span>
-			<span class="fa-stack fa-lg colorwhite"> <i
+            </span> 
+             <span class="fa-stack fa-lg colorwhite"> <i
 				class="fa fa-circle fa-stack-2x"></i> <i
 				class="fa fa-twitter fa-stack-1x fa-inverse colorblue"></i>
-			</span>
-			<span class="fa-stack fa-lg colorwhite"> <i
+			</span> 
+            <span class="fa-stack fa-lg colorwhite"> <i
 				class="fa fa-circle fa-stack-2x"></i> <i
 				class="fa fa-facebook fa-stack-1x fa-inverse colorblue"></i>
 			</span>
@@ -102,14 +95,14 @@
 	</div>
 </div>
 <script type="text/javascript">
-	function GetMoreArticle(contentId) {
-	        var c1 = $(".item1").prop("outerHTML");;
-	        var c2 = $(".item2").prop("outerHTML");;
-	        var len = $("#" + contentId + " div").length;
-	        if ((len / 3) % 2 > 0) {
-	            $("#" + contentId).append( c2).append( c1).append( c2 );
-	        } else {
-	            $("#" + contentId).append(c1).append(c2).append(c1);
-	        }
-	    }
+    function GetMoreArticle(contentId) {
+        var c1 = $(".item1").prop("outerHTML");;
+        var c2 = $(".item2").prop("outerHTML");;
+        var len = $("#" + contentId + " div").length;
+        if ((len / 3) % 2 > 0) {
+            $("#" + contentId).append( c2).append( c1).append( c2 );
+        } else {
+            $("#" + contentId).append(c1).append(c2).append(c1);
+        }
+    }
 </script>

@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 citizenApp.controller('DiscoverController', function ($scope, $http, $rootScope, $location) {
     $scope.myInterval = 5000;
     $scope.title = "Deira Fish Market";

@@ -18,114 +18,23 @@
     min-height: calc(100%);
 }
 
-.myDropDownList {
-		margin-top: 14px;
-		margin-right: 15px;
-	}
-	.Service2 .section-header {
-		color: #000000;
-	}
-	.TxtAppointment,
-	.TxtAppointment:hover,
-	.TxtAppointment:active {
-		width: 100%;
-		height: 100%;
-		font-size: 1.3em;
-		font-weight: 100;
-		border: none;
-		margin: 0;
-		padding: 0;
-	}
-	.credit-card-item {
-		border-bottom: #999999 1px solid;
-		margin-left: 15px;
-		padding-left: 0;
-	}
-	.credit-card-item-border-Last {
-		border-width: 0;
-		border: none;
-	}
-	.credit-card-group {
-		border-color: #000000;
-	}
-	.SwichLink {
-		height: 45px;		
-		border: solid #7ab76e 1px;
-		line-height: 45px;
-		text-align: center;
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-	.SwichLink-left {
-		margin-right: 0px;
-		border-top-left-radius: 6px;
-		border-bottom-left-radius: 6px;
-	}
-	.SwichLink-right {
-		margin-left: 0px;
-		border-top-right-radius: 6px;
-		border-bottom-right-radius: 6px;
-	}
-	.ListAndMapViewContent {
-		margin-top: 40px;
-		height: 80px;
-		padding-right: 15px;
-		padding-left: 15px;
-		font-size: 1.4em;
-		color: #999999;
-		margin-bottom: 10px;
-	}
-	.ListAndMapViewContent div:first-child {
-		margin-top: 30px;
-	}
-	.SwichContent {
-		padding: 0;
-		float: right;
-		font-size: 1.2em;
-	}
-	.SwichLinkActive {
-		background-color: #7ab76e;
-		color: #ffffff;
-	}
-	.CleanFloat {
-		clear: right;
-	}
-	.ico-selected-blue {
-		margin-right: 15px;
-		margin-top: 15px;
-	}
-	.CleanSelected .ico-selected-blue {
-		background-image: none;
-		border: 1px solid #999999;
-		border-radius: 50px;
-	}
-	.Contract {
-		padding-left: 15px;
-		padding-right: 15px;
-		font-size: 1.2em;
-		margin-top: 30px;
-		padding-bottom: 30px;
-	}
-	.Contract label {
-		color: #999999;
-		margin-right: 5px;
-	}
-	.NextBtn {
-		width: 100%;
-		border: none;
-		text-align: right;
-		padding-right: 30px;
-		height: 69px;
-		line-height: 69px;
-		background-color: #ff8f71;
-		border-radius: 4px;
-		font-size: 1.5em;
-		color: #ffffff;
-		letter-spacing: 1px;
-	}
-	.Contract .Title {
-		color: #ff8f71;
-	}
-	.MapView img {
-		width: 100%;
-	}
+.s-dropdown{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    min-height: 50px;
+}
+
+.s-dropdown .text{
+    font-size: 1.5em;
+}
+
+.s-dropdown .icon{
+    float: right;
+}
+
+.btn-green{
+	border: none;
+	background-color: #7bb76f;
+}

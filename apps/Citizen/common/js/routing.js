@@ -1,3 +1,5 @@
+
+/* JavaScript content from js/routing.js in folder common */
 /**
  *
  */
@@ -59,18 +61,19 @@ citizenApp.config(['$routeProvider',
 		    }).when('/services/service1', {
 		        templateUrl: 'views/service1.html',
 		        reloadOnSearch: false
-		    }).when('/event', {
-		        templateUrl: 'views/event.html',
-		        reloadOnSearch: false
-		    }).when('/article', {
-		        templateUrl: 'views/article.html',
-		        reloadOnSearch: false
 		    })
 		    .otherwise({
 		        redirectTo: '/',
 		        reloadOnSearch: false
 		    }).when('/paySuccess', {
 		        templateUrl: 'views/PaymentSuccessed.html',
+		        reloadOnSearch: false
+		    }).when('/event-detail',{
+                    templateUrl:'views/event-detail.html',
+                    reloadOnSearch:false
+                })
+		    .when('/article-detail',{		    	
+		    	templateUrl: 'views/article.html',
 		        reloadOnSearch: false
 		    });
 		}]);
